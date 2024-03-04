@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn/* , faNodeJs  */} from '@fortawesome/free-brands-svg-icons';
 
-import { useEffect, useState } from 'react';
+/* import { useEffect, useState } from 'react'; */
 function Links() {
-  const icons = [faLinkedinIn, faNodeJs, faGithub];
+  /* const icons = [faLinkedinIn, faNodeJs, faGithub];
   const [iconIndex, setIconIndex] = useState(0);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ function Links() {
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, [icons.length]);
+  }, [icons.length]); */
   {/* <FontAwesomeIcon icon={icons[iconIndex]}/> */ }
   return (
     <>

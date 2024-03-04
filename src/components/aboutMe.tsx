@@ -1,9 +1,8 @@
-import MyTypedComponent from "./typingEffect";
 
 const born =  new Date(2004, 1, 20);
 const current = new Date();
 const differenceInMilliseconds = current.getTime() - born.getTime();
-const now = Math.floor(current.getTime() / (1000 * 60 * 60 * 24))
+
 const age = Math.floor((differenceInMilliseconds / (1000 * 60 * 60 * 24))/365.5)
 
 

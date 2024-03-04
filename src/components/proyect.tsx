@@ -1,20 +1,20 @@
 import { useEffect, useState } from "react"
-import React from "react"
+/* import React from "react" */
 import axios, { AxiosResponse, AxiosError } from 'axios';
 
 function Proyecto() {
-    interface ApiResponse {
+    /* interface ApiResponse {
         data: any;
         id: any
         languages_url: any
-    }
+    } */
 
     interface ApiError {
         message: string;
     }
     const [name, setName] = useState(null)
     const [languages, setLanguages] = useState<string[]>([]);
-    const [languagesPercent,setLanguagesPercent] = useState<any>([])
+    /* const [languagesPercent,setLanguagesPercent] = useState<any>([]) */
     const accessToken = {}//Generar token nuevp
     const username = 'BDeuDev';
     const repositoryName = 'Leadergym';
@@ -32,10 +32,10 @@ function Proyecto() {
                 axios.get(url, { headers })
                     .then((languagesResponse: AxiosResponse<any>) => {
                         const languagesArray = Object.keys(languagesResponse.data);
-                        const languagesArray2 = Object.values(languagesResponse.data)
+                        /* const languagesArray2 = Object.values(languagesResponse.data) */
                         
                         setLanguages(languagesArray);
-                        setLanguagesPercent(languagesArray2) 
+                        /* setLanguagesPercent(languagesArray2) */ 
                     })
 
                     .catch((languagesError: AxiosError<ApiError>) => {

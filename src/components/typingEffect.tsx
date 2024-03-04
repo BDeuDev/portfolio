@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef} from 'react';
 import Typed from 'typed.js';
 
 const MyTypedComponent = () => {
   const typedContainerRef = useRef(null);
-  const [isTyping, setIsTyping] = useState(true);
+ /*  const [isTyping, setIsTyping] = useState(true); */
   useEffect(() => {
     if (typedContainerRef.current) {
       const typed = new Typed(typedContainerRef.current, {
@@ -24,7 +24,7 @@ const MyTypedComponent = () => {
         typed.destroy();
       }; 
     }
-  }, [isTyping]);
+  }, /* [isTyping] */);
 
   
 
