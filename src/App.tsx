@@ -85,7 +85,8 @@ function App() {
         <section ref={sectionRefs[2]} className='min-h-screen flex flex-col justify-center items-center'>
           <Skills/>
         </section>  
-        <section ref={sectionRefs[3]} className='min-h-screen'>
+        <section ref={sectionRefs[3]} className='min-h-screen flex flex-col justify-center items-center'>
+        <Skills/>
         </section>
         <section ref={sectionRefs[4]} className='min-h-screen'>
         </section>
