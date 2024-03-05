@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'white':'0 0 0 2px #ffffff',
+        'black':'0 0 0 2px #0000'
+      },
       width:{
         '6/10':'width: 60%'
       },

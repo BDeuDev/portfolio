@@ -1,6 +1,7 @@
 import SkillItem from './skill-item';
 import { faNodeJs, faJs, faReact, faHtml5, faCss3Alt, faGitAlt,faGithub,faDocker} from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, } from '@fortawesome/free-solid-svg-icons';
+import ProgressBar from './progressBar';
 
 
 const Skills = () => {
@@ -18,16 +19,15 @@ const Skills = () => {
   ]
   return (
     <>
-      <div className='flex flex-col items-center justify-center w-6/12 '>
-        <h1 className='text-3xl mb-10 mt-5 font-bold'>Tecnologias</h1>
-        <div className='flex flex-wrap max-w-max items-center justify-center border bg-secundario bg-opacity-90 p-6 rounded-xl shadow hover:shadow-zinc-900'>
+      <div className='flex flex-col items-center justify-center w-6/12 mt-20'>
+        <h1 className='text-3xl text-white mb-3 mt-8 font-bold bg-principal bg-opacity-90 p-4 rounded-xl hover:shadow-black cursor-pointer hover:underline'>Have experience with</h1>
+        <div className='flex flex-wrap max-w-max items-center justify-center border bg-secundario bg-opacity-80 p-6 rounded-xl  hover:shadow-black '>
           {icons.map((value, index) => (
             <SkillItem icon={value} key={index} className={`${colors[index]} `} />
           ))}
-
-
         </div>
 
+          {/* <ProgressBar percent={75} className=''/> */}
 
       </div>
 

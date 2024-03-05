@@ -7,6 +7,8 @@ import Particles1 from './components/particles';
 import Settings from './components/settings';
 import NavBar from './components/navBar';
 import Skills from './components/skills';
+import ProgressBar from './components/progressBar';
+import ProyectContainer from './components/proyect-container';
 
 
 
@@ -24,6 +26,7 @@ function App() {
 
   const [currentSection, setCurrentSection] = useState<number>(0);
   const isScrolling = useRef(false);
+
 
   const scrollToSection = (index: number) => {
     if (sectionRefs[index].current) {
@@ -49,10 +52,14 @@ function App() {
   };
 
   useEffect(() => {
+    if (sectionRefs[0].current) {
+ 
+      sectionRefs[0].current.scrollIntoView({ behavior: 'instant' });
+    }
     if (mainRef.current) {
       mainRef.current.addEventListener('scroll', handleScroll);
     }
-
+    
     return () => {
       if (mainRef.current) {
         mainRef.current.removeEventListener('scroll', handleScroll);
@@ -76,19 +83,19 @@ function App() {
             </NavBar>
           ))}
         </header>
-        <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center border-b-2'>
+        <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center border-b-2 mt-10'>
           <Home />
         </section>
-        <section ref={sectionRefs[1]} className='min-h-screen flex flex-col justify-center items-center'>
+        <section ref={sectionRefs[1]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
           <AboutMe />
         </section>
-        <section ref={sectionRefs[2]} className='min-h-screen flex flex-col justify-center items-center'>
+        <section ref={sectionRefs[2]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
           <Skills/>
         </section>  
-        <section ref={sectionRefs[3]} className='min-h-screen flex flex-col justify-center items-center'>
-        <Skills/>
+        <section ref={sectionRefs[3]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
+            <ProyectContainer/>
         </section>
-        <section ref={sectionRefs[4]} className='min-h-screen'>
+        <section ref={sectionRefs[4]} className='min-h-screen mt-10'>
         </section>
         <Links />
         <Settings/>
