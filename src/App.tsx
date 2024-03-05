@@ -7,7 +7,7 @@ import Particles1 from './components/particles';
 import Settings from './components/settings';
 import NavBar from './components/navBar';
 import Skills from './components/skills';
-import ProgressBar from './components/progressBar';
+
 import ProyectContainer from './components/proyect-container';
 
 

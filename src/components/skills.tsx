@@ -1,7 +1,7 @@
 import SkillItem from './skill-item';
 import { faNodeJs, faJs, faReact, faHtml5, faCss3Alt, faGitAlt,faGithub,faDocker} from '@fortawesome/free-brands-svg-icons';
 import { faDatabase, } from '@fortawesome/free-solid-svg-icons';
-import ProgressBar from './progressBar';
+
 
 
 const Skills = () => {
