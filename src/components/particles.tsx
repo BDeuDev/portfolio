@@ -14,7 +14,7 @@ const Particles1= (/* { color }: { color?: string } */) => {
         await console.log(container);
     }, []);
     return (
-        <Particles
+        <Particles 
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}

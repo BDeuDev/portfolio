@@ -14,7 +14,7 @@ const Settings: React.FC<SettingsProps> = () => {
 
   return (
     <>
-      <div className='flex flex-col fixed right-5 bottom-1 text-black bg-white items-center justify-center rounded-xl cursor-pointer'>
+      <div className='flex flex-col fixed right-5 bottom-1 text-black bg-white items-center justify-center rounded-xl cursor-pointer hover:scale-110'>
         <FontAwesomeIcon
           icon={faCogs}
           className='p-2 text-5xl'

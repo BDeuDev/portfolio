@@ -18,10 +18,10 @@ function Links() {
     <>
       <div className='flex flex-col fixed left-1 bottom-1 text-white bg-principal items-center justify-center rounded-xl '>
         <a href="https://github.com/BDeuDev" target='blank'>
-          <FontAwesomeIcon className='p-5 text-5xl' icon={faGithub} />
+          <FontAwesomeIcon className='p-5 text-5xl hover:scale-125' icon={faGithub} />
         </a>
         <a href="https://www.linkedin.com/in/bdeusich/" target='blank'>
-          <FontAwesomeIcon className='p-5 text-5xl' icon={faLinkedinIn} />
+          <FontAwesomeIcon className='p-5 text-5xl hover:scale-125' icon={faLinkedinIn} />
         </a>
       </div>
 

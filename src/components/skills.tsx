@@ -19,8 +19,8 @@ const Skills = () => {
   ]
   return (
     <>
-      <div className='flex flex-col items-center justify-center w-6/12 mt-20'>
-        <h1 className='text-3xl text-white mb-3 mt-8 font-bold bg-principal bg-opacity-90 p-4 rounded-xl hover:shadow-black cursor-pointer hover:underline'>Have experience with</h1>
+      <div className='flex flex-col items-center justify-center w-6/12 mt-12'>
+        <h1 className='text-3xl text-white mb-8 font-bold bg-principal bg-opacity-90 p-4 rounded-xl hover:shadow-black cursor-pointer hover:underline '>Have experience with</h1>
         <div className='flex flex-wrap max-w-max items-center justify-center border bg-secundario bg-opacity-80 p-6 rounded-xl  hover:shadow-black '>
           {icons.map((value, index) => (
             <SkillItem icon={value} key={index} className={`${colors[index]} `} />

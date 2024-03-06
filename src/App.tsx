@@ -70,7 +70,7 @@ function App() {
   return (
     <>
       <Particles1 />
-      <main ref={mainRef} className="overflow-y-scroll h-screen relative z-10">
+      <main ref={mainRef} className="overflow-y-scroll h-screen relative z-10 ">
         <header className='flex justify-end w-screen bg-principal text-white border-b border-gray-500 fixed top-0 font-nunito z-10'>
           {textButton.map((text, index) => (
             <NavBar
@@ -83,7 +83,7 @@ function App() {
             </NavBar>
           ))}
         </header>
-        <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center border-b-2 mt-10'>
+        <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center mt-10'>
           <Home />
         </section>
         <section ref={sectionRefs[1]} className='min-h-screen flex flex-col justify-center items-center mt-10'>

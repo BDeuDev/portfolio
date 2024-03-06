@@ -14,9 +14,9 @@ const ProyectContainer = () => {
   return (
     <>
     <div>
-    <h1 className='text-3xl text-white mb-8 mt-28 font-bold bg-principal bg-opacity-90 p-4 rounded-xl hover:shadow-black cursor-pointer hover:underline'>My proyects</h1>
+    <h1 className='text-3xl text-white mb-8 mt-28 font-bold bg-principal bg-opacity-90 p-4 rounded-xl hover:shadow-black cursor-pointer hover:underline '>My proyects</h1>
     </div>
-    <div className='bg-secundario bg-opacity-90 w-10/12 flex flex-wrap p-6 rounded-xl gap-10 font-nunito shadow-2xl'>
+    <div className='bg-secundario bg-opacity-90 w-10/12 flex flex-wrap p-6 rounded-xl gap-10 font-nunito shadow-2xl cursor-pointer '>
         {content.map((text,index)=>(
             <ProyectItem children={title[index]} width={48} content={text} techs={techs[index]} mayus={mayus[index]}/>
         ))}
