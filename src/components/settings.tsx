@@ -10,7 +10,7 @@ interface SettingsProps {
 
 const Settings: React.FC<SettingsProps> = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
-  const [isAnimated,setIsAnimated] = useState(true)
+  const [isAnimated, setIsAnimated] = useState(true)
 
   return (
     <>
@@ -25,16 +25,16 @@ const Settings: React.FC<SettingsProps> = () => {
       {isVisible && (
         <div className=' z-50 flex flex-col items-center justify-center w-2/12 bg-white fixed right-28 bottom-20 rounded-xl border border-black transition-opacity duration-500 ease-in-out opacity-100'>
           <h1 className='text-2xl text-black p-5'>Configuración</h1>
-            <Button id='toggle1'
-              onClick={() => setIsAnimated(!isAnimated)}
-              children={'Animacion'}
-              checked={isAnimated}
-            />
-            
+          <Button id='toggle1'
+            onClick={() => setIsAnimated(!isAnimated)}
+            children={'Animacion'}
+            checked={isAnimated}
+          />
+
         </div>
       )}
-      {isAnimated  && <Particles1 />}
-      
+      {isAnimated && <Particles1 />}
+
     </>
   );
 };

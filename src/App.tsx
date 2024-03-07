@@ -32,7 +32,7 @@ const App = () => {
   const scrollToSection = (index: number) => {
     if (sectionRefs[index].current) {
       isScrolling.current = true;
-      sectionRefs[index].current?.scrollIntoView({ behavior: 'smooth'  });
+      sectionRefs[index].current?.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -54,13 +54,13 @@ const App = () => {
 
   useEffect(() => {
     if (sectionRefs[0].current) {
- 
+
       sectionRefs[0].current.scrollIntoView({ behavior: 'instant' });
     }
     if (mainRef.current) {
       mainRef.current.addEventListener('scroll', handleScroll);
     }
-    
+
     return () => {
       if (mainRef.current) {
         mainRef.current.removeEventListener('scroll', handleScroll);
@@ -87,26 +87,25 @@ const App = () => {
         <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center mt-10'>
           <Home />
         </section>
-        <Span/>
-        <section  ref={sectionRefs[1]}  className='min-h-screen flex flex-col justify-center items-center mt-10'>
-            <SectionTitle children='About Me'/>
-            <AboutMe />
+        <Span />
+        <section ref={sectionRefs[1]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
+          <SectionTitle children='About Me' />
+          <AboutMe />
         </section>
-        <Span/>
+        <Span />
         <section ref={sectionRefs[2]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
-          <SectionTitle children='Have Experiencie With'/>
-          <Skills/>
-        </section>  
-        <Span/>
-        <section ref={sectionRefs[3]} className='min-h-screen  mt-10'>
-        <SectionTitle children='Proyects'/>
-           
-            <ActiveSlider2/>
-            <ActiveSlider/>
+          <SectionTitle children='Have Experiencie With' />
+          <Skills />
         </section>
-        
+        <Span />
+        <section ref={sectionRefs[3]} className='min-h-screen  mt-10'>
+          <SectionTitle children='Proyects' />
+          <ActiveSlider2 />
+          <ActiveSlider />
+        </section>
+
         <Links />
-        <Settings/>
+        <Settings />
       </main>
     </>
   );

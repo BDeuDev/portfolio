@@ -33,9 +33,9 @@ function Proyecto() {
                     .then((languagesResponse: AxiosResponse<any>) => {
                         const languagesArray = Object.keys(languagesResponse.data);
                         /* const languagesArray2 = Object.values(languagesResponse.data) */
-                        
+
                         setLanguages(languagesArray);
-                        /* setLanguagesPercent(languagesArray2) */ 
+                        /* setLanguagesPercent(languagesArray2) */
                     })
 
                     .catch((languagesError: AxiosError<ApiError>) => {
@@ -47,20 +47,16 @@ function Proyecto() {
             });
     }, []);
     return (
-        <>  
-                <div>
-                    <h2 className="text-xl">{name}</h2>
-                    <ul>
-                        {languages.map((language, index) => (
-                            <li className="text-white" key={index}>{language}</li>
-                            
-                        ))}
-                        {/* <li className="text-white" key={index}>{}</li> */}
-                    </ul>
-
-                </div>
-            
-
+        <>
+            <div>
+                <h2 className="text-xl">{name}</h2>
+                <ul>
+                    {languages.map((language, index) => (
+                        <li className="text-white" key={index}>{language}</li>
+                    ))}
+                    {/* <li className="text-white" key={index}>{}</li> */}
+                </ul>
+            </div>
         </>
     )
 }

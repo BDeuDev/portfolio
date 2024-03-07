@@ -2,9 +2,9 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 //import { loadFull } from "tsparticles"; 
-import { loadSlim } from "tsparticles-slim"; 
+import { loadSlim } from "tsparticles-slim";
 
-const Particles1= (/* { color }: { color?: string } */) => {
+const Particles1 = (/* { color }: { color?: string } */) => {
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
         await loadSlim(engine);
@@ -14,7 +14,7 @@ const Particles1= (/* { color }: { color?: string } */) => {
         await console.log(container);
     }, []);
     return (
-        <Particles 
+        <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}

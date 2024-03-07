@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedinIn/* , faNodeJs  */,} from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedinIn/* , faNodeJs  */, } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 /* import { useEffect, useState } from 'react'; */
-const Links= () => {
+const Links = () => {
   const correoElectronico = 'bdeusich.dev@gmail.com';
 
   const abrirCorreo = () => {
@@ -33,7 +33,7 @@ const Links= () => {
           <FontAwesomeIcon className='lg:p-3 text-5xl hover:scale-110 cursor-pointer' icon={faEnvelope} />
         </a>
       </div>
-        
+
     </>
   )
 }

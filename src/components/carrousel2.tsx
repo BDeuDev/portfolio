@@ -36,23 +36,23 @@ const ActiveSlider2 = () => {
           <SwiperSlide key={item.title} >
             <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[450px] w-[300px] mobile:ml-auto mobile:mr-auto overflow-hidden cursor-pointer font-nunito font-extralight">
               <div className="absolute inset-0 bg-principal bg-center flex flex-col items-center justify-center">
-                    <h1 className="text-3xl mb-10">{item.title}</h1>
-                    <div className="flex flex-col items-start justify-start ">
-                        {item.techs.map((value,index)=>(
-                        <ul className="list-disc">
-                            <li key={index}>{value}</li>
-                        </ul>
-                        
-                    ))}
-                    </div>
-                    
+                <h1 className="text-3xl mb-10">{item.title}</h1>
+                <div className="flex flex-col items-start justify-start ">
+                  {item.techs.map((value, index) => (
+                    <ul className="list-disc">
+                      <li key={index}>{value}</li>
+                    </ul>
+
+                  ))}
                 </div>
-                <div className="absolute inset-0 bg-black lg:opacity-50 group-hover:opacity-10 mobile:opacity-0" />
-              
+
+              </div>
+              <div className="absolute inset-0 bg-black lg:opacity-50 group-hover:opacity-10 mobile:opacity-0" />
+
               <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-100 mobile:rotate-45 mobile:text-blue-500" />
               <div className="absolute bottom-6 left-16 hidden group-hover:block underline mobile:block"><a href={item.url ? item.url : "#"} target="blank">View site</a></div>
               <div className="absolute bottom-6 left-44 hidden group-hover:block underline mobile:block"><a href={item.repo ? item.repo : "#"} target="blank">Repository</a></div>
-            </div> 
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
