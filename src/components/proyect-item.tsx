@@ -1,21 +1,19 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket } from '@fortawesome/free-solid-svg-icons';
 
 interface ItemProp {
     children: string;
     width:number;
-    content:string
+   
     techs:string[]
-    mayus:string
+    
 }
 
 
-const ProyectItem: React.FC<ItemProp> = ({children,width,content,techs,mayus}) => {
+const ProyectItem: React.FC<ItemProp> = ({children,width,techs}) => {
   return (
     <>
     <div className='flex flex-col items-center justify-center bg-principal h-auto  text-white rounded-xl hover:shadow-white' style={{width:`${width}%`}}>
       <h1 className='text-3xl mt-10 font-bold hover:underline hover:scale-110'>{children}</h1>
-      <p className='m-10 leading-8 hover:scale-110'><i className='text-xl font-bold'>{mayus}</i>{content}<FontAwesomeIcon icon={faRocket}/></p>
+      
       <h3 className='text-xl font-bold hover:scale-110 hover:underline' >Work with:</h3>
       <div className='ml-10 mr-10 mt-3 mb-10 p-5 leading-8 flex flex-col items-start justify-start '>{techs.map((item,index)=>(
         <ul className='list-disc'>

@@ -1,11 +1,12 @@
 import SkillItem from './skill-item';
 import { faNodeJs, faJs, faReact, faHtml5, faCss3Alt, faGitAlt,faGithub,faDocker} from '@fortawesome/free-brands-svg-icons';
-import { faDatabase, } from '@fortawesome/free-solid-svg-icons';
-
+import {  faDatabase,faLock} from '@fortawesome/free-solid-svg-icons';
+import {  } from "react-icons/fa";
 
 
 const Skills = () => {
-  const icons = [faNodeJs,faReact, faDatabase,faJs, faHtml5, faCss3Alt, faGitAlt,faGithub,faDocker]
+  const icons = [faNodeJs,faReact, faDatabase,faJs, faHtml5, faCss3Alt, faGitAlt,faGithub,faDocker,faLock,]
+  const techs = ['NodeJs','ReactJs','MySql','JavaScript','HTML5','CSS3','Git','GiHub','Docker','JWT']
   const colors = ['text-lime-600',
     'text-sky-400',
     'text-sky-400',
@@ -14,16 +15,18 @@ const Skills = () => {
     'text-sky-400',
     'text-orange-600',
     'text-white',
-    'text-sky-400'
+    'text-sky-400',
+    'text-white',
+    
     
   ]
   return (
     <>
-      <div className='flex flex-col items-center justify-center w-6/12 mt-12'>
-        <h1 className='text-3xl text-white mb-8 font-bold bg-principal bg-opacity-90 p-4 rounded-xl hover:shadow-black cursor-pointer hover:underline '>Have experience with</h1>
-        <div className='flex flex-wrap max-w-max items-center justify-center border bg-secundario bg-opacity-80 p-6 rounded-xl  hover:shadow-black '>
+      <div className='flex flex-col items-center justify-center lg:w-6/12 mobile:w-11/12 mt-12'>
+        
+        <div className='flex flex-wrap max-w-max items-center justify-center border bg-principal bg-opacity-90 p-6 rounded-xl  hover:shadow-black '>
           {icons.map((value, index) => (
-            <SkillItem icon={value} key={index} className={`${colors[index]} `} />
+            <SkillItem icon={value} key={index} className={`${colors[index]} `} name={techs[index]}/>
           ))}
         </div>
 

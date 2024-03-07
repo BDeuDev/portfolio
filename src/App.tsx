@@ -7,17 +7,18 @@ import Particles1 from './components/particles';
 import Settings from './components/settings';
 import NavBar from './components/navBar';
 import Skills from './components/skills';
+import Span from './components/span';
+import ActiveSlider from './components/carrousel';
+import ActiveSlider2 from './components/carrousel2';
+import SectionTitle from './components/titleSection';
 
-import ProyectContainer from './components/proyect-container';
 
 
+const textButton = ['Inicio', 'About', 'Skills', 'Proyectos'];
 
-const textButton = ['Inicio', 'Sobre mi', 'Skills', 'Proyectos', 'Contacto'];
-
-function App() {
+const App = () => {
   const mainRef = useRef<HTMLDivElement>(null);
   const sectionRefs = [
-    useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
@@ -31,7 +32,7 @@ function App() {
   const scrollToSection = (index: number) => {
     if (sectionRefs[index].current) {
       isScrolling.current = true;
-      sectionRefs[index].current?.scrollIntoView({ behavior: 'smooth' });
+      sectionRefs[index].current?.scrollIntoView({ behavior: 'smooth'  });
     }
   };
 
@@ -71,7 +72,7 @@ function App() {
     <>
       <Particles1 />
       <main ref={mainRef} className="overflow-y-scroll h-screen relative z-10 ">
-        <header className='flex justify-end w-screen bg-principal text-white border-b border-gray-500 fixed top-0 font-nunito z-10'>
+        <header className='flex justify-end w-screen bg-principal text-white border-b border-gray-500 fixed top-0 font-nunito z-10 mobile:h-auto lg:h-auto'>
           {textButton.map((text, index) => (
             <NavBar
               key={index}
@@ -86,17 +87,24 @@ function App() {
         <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center mt-10'>
           <Home />
         </section>
-        <section ref={sectionRefs[1]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
-          <AboutMe />
+        <Span/>
+        <section  ref={sectionRefs[1]}  className='min-h-screen flex flex-col justify-center items-center mt-10'>
+            <SectionTitle children='About Me'/>
+            <AboutMe />
         </section>
+        <Span/>
         <section ref={sectionRefs[2]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
+          <SectionTitle children='Have Experiencie With'/>
           <Skills/>
         </section>  
-        <section ref={sectionRefs[3]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
-            <ProyectContainer/>
+        <Span/>
+        <section ref={sectionRefs[3]} className='min-h-screen  mt-10'>
+        <SectionTitle children='Proyects'/>
+           
+            <ActiveSlider2/>
+            <ActiveSlider/>
         </section>
-        <section ref={sectionRefs[4]} className='min-h-screen mt-10'>
-        </section>
+        
         <Links />
         <Settings/>
       </main>

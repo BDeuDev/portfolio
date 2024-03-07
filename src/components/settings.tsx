@@ -14,7 +14,8 @@ const Settings: React.FC<SettingsProps> = () => {
 
   return (
     <>
-      <div className='flex flex-col fixed right-5 bottom-1 text-black bg-white items-center justify-center rounded-xl cursor-pointer hover:scale-110'>
+      <div className='flex flex-col fixed right-5 bottom-1 text-black bg-transparent items-center justify-center rounded-xl cursor-pointer hover:scale-110 z-40'>
+
         <FontAwesomeIcon
           icon={faCogs}
           className='p-2 text-5xl'
@@ -22,7 +23,7 @@ const Settings: React.FC<SettingsProps> = () => {
         />
       </div>
       {isVisible && (
-        <div className='flex flex-col items-center justify-center w-2/12 bg-white fixed right-28 bottom-20 rounded-xl border border-black transition-opacity duration-500 ease-in-out opacity-100'>
+        <div className=' z-50 flex flex-col items-center justify-center w-2/12 bg-white fixed right-28 bottom-20 rounded-xl border border-black transition-opacity duration-500 ease-in-out opacity-100'>
           <h1 className='text-2xl text-black p-5'>Configuración</h1>
             <Button id='toggle1'
               onClick={() => setIsAnimated(!isAnimated)}

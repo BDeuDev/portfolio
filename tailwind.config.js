@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens:{
+        'mobile':'320px'
+      },
       boxShadow: {
         'white':'0 0 0 2px #ffffff',
         'black':'0 0 0 2px #0000'
