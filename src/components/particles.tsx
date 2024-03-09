@@ -65,7 +65,7 @@ const Particles1 = (/* { color }: { color?: string } */) => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 1,
                         straight: false,
                     },
                     number: {
@@ -82,7 +82,7 @@ const Particles1 = (/* { color }: { color?: string } */) => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 1, max: 3 },
                     },
                 },
                 detectRetina: true,

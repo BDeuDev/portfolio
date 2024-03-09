@@ -1,4 +1,4 @@
-import {  aboutEn } from "../constants"
+import { aboutEn } from "../constants"
 import Links from "./links"
 import MyTypedComponent from "./typingEffect"
 
