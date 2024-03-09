@@ -16,7 +16,7 @@ const SkillItem: React.FC<SkillItemProp> = ({ icon, className, name }) => {
 
             <FontAwesomeIcon icon={icon} className={`${className}  text-6xl p-4 bg-black rounded-lg max-w-10 max-h-14  scale-125 hover:shadow-white cursor-pointer `} />
             <div className='flex flex-col items-center justify-center'>
-              <p className=' text-white mt-2 '>{name}</p>
+              <p className=' text-black mt-2 font-bold'>{name}</p>
             </div>
 
           </div>

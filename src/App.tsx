@@ -101,6 +101,7 @@ const App = () => {
         <section ref={sectionRefs[3]} className='min-h-screen  mt-10'>
           <SectionTitle children='Proyects' />
           <ActiveSlider2 />
+          <SectionTitle children='Galery' />
           <ActiveSlider />
         </section>
 
