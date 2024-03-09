@@ -14,7 +14,7 @@ import SectionTitle from './components/titleSection';
 
 
 
-const textButton = ['Inicio', 'About', 'Skills', 'Proyectos'];
+const textButton = ['Home', 'About', 'Skills', 'Projects'];
 
 const App = () => {
   const mainRef = useRef<HTMLDivElement>(null);
