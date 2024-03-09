@@ -3,7 +3,7 @@ import Links from "./links"
 import MyTypedComponent from "./typingEffect"
 
 
-const Home = () => {
+const About = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center font-raleway">
@@ -25,4 +25,4 @@ const Home = () => {
     </>
   )
 }
-export default Home
+export default About;

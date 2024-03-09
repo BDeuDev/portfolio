@@ -10,7 +10,7 @@ const Links = () => {
     window.location.href = `mailto:${correoElectronico}`;
   };
   const style = 
-    'p-3 text-5xl transition-all duration-300 ease-in-out transform hover:scale-110 text-white bg-black rounded-full hover:text-black hover:bg-white hover:outline hover:shadow-xl'
+    'p-3 text-5xl transition-all duration-1000 ease-in-out transform hover:scale-110 text-white bg-black rounded-full hover:text-black hover:bg-white  hover:shadow-xl'
   
   return (
     <>

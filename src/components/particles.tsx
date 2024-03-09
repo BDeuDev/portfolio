@@ -53,7 +53,7 @@ const Particles1 = (/* { color }: { color?: string } */) => {
                     },
                     links: {
                         color: "#0000",
-                        distance: 150,
+                        distance: 75,
                         enable: true,
                         opacity: 0.2,
                         width: 1,

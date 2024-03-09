@@ -1,7 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import './App.css';
-/* import Links from './components/links'; */
-import Home from './components/home';
+import About from './components/about';
 import Particles1 from './components/particles';
 import Settings from './components/settings';
 import NavBar from './components/navBar';
@@ -82,7 +81,7 @@ const App = () => {
           ))}
         </header>
         <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center mt-10'>
-          <Home />
+          <About />
         </section>
         <Span />
         <section ref={sectionRefs[1]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
