@@ -9,28 +9,20 @@ const Links = () => {
   const abrirCorreo = () => {
     window.location.href = `mailto:${correoElectronico}`;
   };
-  /* const icons = [faLinkedinIn, faNodeJs, faGithub];
-  const [iconIndex, setIconIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setIconIndex((prevIndex) => (prevIndex + 1) % icons.length);
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-  }, [icons.length]); */
-  {/* <FontAwesomeIcon icon={icons[iconIndex]}/> */ }
+  const style = 
+    'p-3 text-5xl transition-all duration-300 ease-in-out transform hover:scale-110 text-white bg-black rounded-full hover:text-black hover:bg-white hover:outline hover:shadow-xl'
+  
   return (
     <>
-      <div className='flex flex-col fixed left-1 bottom-1 text-white bg-principal items-center justify-center rounded-xl z-40 mobile:p-1 cursor-pointer'>
-        <a href="https://github.com/BDeuDev" target='blank'>
-          <FontAwesomeIcon className='lg:p-3 text-5xl hover:scale-110' icon={faGithub} />
+      <div className='flex flex-row items-center justify-center mt-5'>
+        <a href="https://github.com/BDeuDev" target='blank' className=' m-4 '>
+          <FontAwesomeIcon className={style} icon={faGithub} />
         </a>
-        <a href="https://www.linkedin.com/in/bdeusich/" target='blank'>
-          <FontAwesomeIcon className='lg:p-3 text-5xl hover:scale-110' icon={faLinkedinIn} />
+        <a href="https://www.linkedin.com/in/bdeusich/" target='blank' className=' m-4'>
+          <FontAwesomeIcon className={style} icon={faLinkedinIn} />
         </a>
-        <a onClick={abrirCorreo} target='blank'>
-          <FontAwesomeIcon className='lg:p-3 text-5xl hover:scale-110 cursor-pointer' icon={faEnvelope} />
+        <a onClick={abrirCorreo} target='blank' className='m-4 cursor-pointer'>
+          <FontAwesomeIcon className={style} icon={faEnvelope} />
         </a>
       </div>
 

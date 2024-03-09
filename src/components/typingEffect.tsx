@@ -30,8 +30,8 @@ const MyTypedComponent = () => {
 
   return (
     <>
-      <div className='inline-block text-4xl'>
-        <h2 ref={typedContainerRef} className='inline-block text-4xl cursor-pointer' />
+      <div className='inline-block text-2xl font-raleway '>
+        <h1 ref={typedContainerRef} className='inline-block text-2xl cursor-pointer ' />
       </div>
 
     </>

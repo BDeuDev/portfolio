@@ -1,8 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import './App.css';
-import Links from './components/links';
+/* import Links from './components/links'; */
 import Home from './components/home';
-import AboutMe from './components/aboutMe';
 import Particles1 from './components/particles';
 import Settings from './components/settings';
 import NavBar from './components/navBar';
@@ -14,7 +13,7 @@ import SectionTitle from './components/titleSection';
 
 
 
-const textButton = ['Home', 'About', 'Skills', 'Projects'];
+const textButton = ['About me', 'Skills', 'Projects'];
 
 const App = () => {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -22,12 +21,10 @@ const App = () => {
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
-    useRef<HTMLDivElement>(null),
   ];
 
   const [currentSection, setCurrentSection] = useState<number>(0);
   const isScrolling = useRef(false);
-
 
   const scrollToSection = (index: number) => {
     if (sectionRefs[index].current) {
@@ -72,7 +69,7 @@ const App = () => {
     <>
       <Particles1 />
       <main ref={mainRef} className="overflow-y-scroll h-screen relative z-10 ">
-        <header className='flex justify-end w-screen bg-principal text-white border-b border-gray-500 fixed top-0 font-nunito z-10 mobile:h-auto lg:h-auto'>
+        <header className='flex justify-end w-screen bg-principal text-white border-b border-gray-500 fixed top-0 font-raleway z-10 mobile:h-auto lg:h-auto'>
           {textButton.map((text, index) => (
             <NavBar
               key={index}
@@ -89,23 +86,18 @@ const App = () => {
         </section>
         <Span />
         <section ref={sectionRefs[1]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
-          <SectionTitle children='About Me' />
-          <AboutMe />
-        </section>
-        <Span />
-        <section ref={sectionRefs[2]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
           <SectionTitle children='Have Experiencie With' />
           <Skills />
         </section>
         <Span />
-        <section ref={sectionRefs[3]} className='min-h-screen  mt-10'>
+        <section ref={sectionRefs[2]} className='min-h-screen  mt-10'>
           <SectionTitle children='Proyects' />
           <ActiveSlider2 />
           <SectionTitle children='Galery' />
           <ActiveSlider />
         </section>
 
-        <Links />
+        
         <Settings />
       </main>
     </>

@@ -25,7 +25,8 @@ export default {
       },
       fontFamily : {
         'vibes':'Great Vibes',
-        'nunito':'Nunito'
+        'nunito':'Nunito',
+        'raleway':'Raleway'
       }
     },
   },
