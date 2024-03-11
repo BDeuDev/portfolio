@@ -84,7 +84,7 @@ import {
     
   ]
   export const about = "Descubri programacion hace unos meses y desde ese momento decidi aprender por mi cuenta, debido a que lo encuentro divertido, me encanta sentarme diariamente a programar, ver que nuevos desafios puedo hallar y como resolverlos, actualmente soy fullstack pero estoy interesado en especializarme en Backend. Soy entusiasta en aprender cosas nuevas y compartir mis conocimientos o descubrimientos."
-  export const aboutEn = "I discovered programming a few months ago, and since then, I've been determined to learn on my own because I find it enjoyable. I love dedicating time each day to coding, exploring new challenges, and finding solutions. Currently, I work as a full-stack developer, but my interest lies in specializing in backend development. I am passionate about learning new things and enjoy sharing my knowledge and discoveries with others."
+  export const aboutEn = "I embarked on my programming journey just a few months ago, and since then, I've been determined to learn on my own because I find it enjoyable. I love dedicating time each day to coding, exploring new challenges, and finding solutions. Currently, I work as a full-stack developer, but my interest lies in specializing in backend development. I am passionate about learning new things and enjoy sharing my knowledge and discoveries with others."
 
 
 
