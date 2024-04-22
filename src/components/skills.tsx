@@ -21,20 +21,14 @@ const Skills = () => {
 
   ]
   return (
-    <>
       <div className='flex flex-col items-center justify-center lg:w-6/12 mobile:w-11/12 mt-12'>
-
-        <div className='flex flex-wrap max-w-max items-center justify-center  shadow-xl glassmorphism-xl p-6 rounded-xl   '>
+        <div className='flex flex-wrap max-w-max items-center justify-center  shadow-md bg-[#CCCCCC] p-6 rounded-xl   '>
           {icons.map((value, index) => (
             <SkillItem icon={value} key={index} className={`${colors[index]} `} name={techs[index]} />
           ))}
         </div>
-
-        {/* <ProgressBar percent={75} className=''/> */}
-
       </div>
 
-    </>
   );
 };
 

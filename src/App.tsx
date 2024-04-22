@@ -1,12 +1,9 @@
 import { useRef, useState, useEffect } from 'react';
 import './App.css';
 import About from './components/about';
-import Particles1 from './components/particles';
-import Settings from './components/settings';
 import NavBar from './components/navBar';
 import Skills from './components/skills';
 import Span from './components/span';
-import ActiveSlider from './components/carrousel';
 import ActiveSlider2 from './components/carrousel2';
 import SectionTitle from './components/titleSection';
 
@@ -66,10 +63,11 @@ const App = () => {
 
   return (
     <>
-      <Particles1 />
-      <main ref={mainRef} className="overflow-y-scroll h-screen relative z-10 ">
-        <header className='flex justify-end w-screen bg-principal text-white border-b border-gray-500 fixed top-0 font-raleway z-10 mobile:h-auto lg:h-auto'>
+
+      <main ref={mainRef} className="overflow-y-scroll h-screen relative z-10 bg-[#F0F0F0]">
+        <header className='flex justify-end w-screen shadow-md bg-[#FFD700] text-white fixed top-0 font-raleway z-10 h-[60px]'>
           {textButton.map((text, index) => (
+            <>
             <NavBar
               key={index}
               className={currentSection === index ? 'active' : ''}
@@ -78,7 +76,11 @@ const App = () => {
             >
               {text}
             </NavBar>
+            <button onClick={() => scrollToSection(index)}></button>
+            </>
+            
           ))}
+        
         </header>
         <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center mt-10'>
           <About />
@@ -92,12 +94,9 @@ const App = () => {
         <section ref={sectionRefs[2]} className='min-h-screen  mt-10'>
           <SectionTitle children='Proyects' />
           <ActiveSlider2 />
-          <SectionTitle children='Galery' />
-          <ActiveSlider />
         </section>
 
         
-        <Settings />
       </main>
     </>
   );

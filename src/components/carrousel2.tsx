@@ -34,8 +34,8 @@ const ActiveSlider2 = () => {
       >
         {proyects.map((item) => (
           <SwiperSlide key={item.title} >
-            <div className="flex flex-col gap-6 mb-20 group relative shadow-lg text-black rounded-xl px-6 py-8 h-[450px] w-[300px] mobile:ml-auto mobile:mr-auto overflow-hidden cursor-pointer font-nunito font-extralight">
-              <div className="absolute inset-0 glassmorphism-xl bg-center flex flex-col items-center justify-center">
+            <div className="mt-8 flex flex-col gap-6 mb-20 group relative shadow-lg text-black rounded-xl px-6 py-8 h-[450px] w-[300px] mobile:ml-auto mobile:mr-auto overflow-hidden cursor-pointer font-nunito font-extralight">
+              <div className="absolute inset-0 bg-[#CCCCCC] bg-opacity-75 bg-center flex flex-col items-center justify-center shadow-md">
                 <h1 className="text-3xl mb-10 font-semibold">{item.title}</h1>
                 <div className="flex flex-col items-start justify-start ">
                   {item.techs.map((value, index) => (
@@ -46,7 +46,7 @@ const ActiveSlider2 = () => {
                 </div>
 
               </div>
-              <div className="absolute inset-0 bg-black lg:opacity-50 group-hover:opacity-10 mobile:opacity-0" />
+              {/* <div className="absolute inset-0 bg-black lg:opacity-50 group-hover:opacity-10 mobile:opacity-0" /> */}
 
               <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-100 mobile:rotate-45 mobile:text-blue-500" />
               <div className="absolute bottom-6 left-16 hidden group-hover:block hover:underline hover:text-blue-500 hover:scale-110 mobile:block"><a href={item.url ? item.url : "#"} target="blank">View site</a></div>
