@@ -56,12 +56,29 @@ import {
 
   export const proyects = [
     {
+      title: "Ecommerce",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      repo:"https://github.com/BDeuDev/ecommerce",
+      url:"",
+      techs:["React", "NodeJs", "ExpressJs","Typescript","MySQL", "Sequelize",'Git, GitHub']
+      
+    },
+    {
       title: "Leadergym",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       repo:"",
       url:"",
       techs:["HTML5, CSS, JS","NodeJs, Express.js",'MySQL, NestJs','Git, GitHub','EJS (Embedded JavaScript)','JsonWebToken (JWT)','WebSockets (socket.io)','Hashing (bcrypt)']
     },
+    {
+      title: "Task Manager",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      repo:"https://github.com/BDeuDev/taskManager",
+      url:"",
+      techs:["React", "NodeJs", "ExpressJs","Typescript","MySQL", "Sequelize",'Git, GitHub']
+      
+    },
+    
     {
       title: "This Portfolio",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -71,14 +88,7 @@ import {
       
     },
     
-    {
-      title: "Comming soon",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      repo:"",
-      url:"",
-      techs:["HTML5, CSS, JS","NodeJs, Express.js",'MySQL, NestJs','Git, GitHub','EJS (Embedded JavaScript)','JsonWebToken (JWT)','WebSockets (socket.io)','Hashing (bcrypt)']
-      
-    },
+    
     
    
     

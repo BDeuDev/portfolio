@@ -13,7 +13,7 @@ const Links = () => {
     'p-3 text-5xl transition-all duration-1000 ease-in-out transform hover:scale-110 text-white bg-black rounded-full hover:text-black hover:bg-white  hover:shadow-xl'
   
   return (
-    <>
+ 
       <div className='flex flex-row items-center justify-center mt-5'>
         <a href="https://github.com/BDeuDev" target='blank' className=' m-4 '>
           <FontAwesomeIcon className={style} icon={faGithub} />
@@ -26,7 +26,7 @@ const Links = () => {
         </a>
       </div>
 
-    </>
+
   )
 }
 export default Links
