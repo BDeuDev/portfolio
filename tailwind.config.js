@@ -24,6 +24,7 @@ export default {
         'claro2':'#c2c6ce'
       },
       fontFamily : {
+        'orbitron':'Orbitron',
         'vibes':'Great Vibes',
         'nunito':'Nunito',
         'raleway':'Raleway'

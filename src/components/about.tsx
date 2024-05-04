@@ -6,7 +6,7 @@ import MyTypedComponent from "./typingEffect"
 const About = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center font-raleway">
+      <div className="flex flex-col items-center justify-center font-raleway absolute">
         <div className="flex flex-row items-start justify-start mt-5  mb-5">
           <h1 className="text-opacity-80 text-black text-6xl cursor-pointer font-bold">W</h1>
           <h1 className="text-black text-opacity-75 text-6xl  cursor-pointer font-bold">elcome,</h1>
@@ -16,12 +16,14 @@ const About = () => {
         </div>
       </div>
 
-      <span className="w-full h-[25px]"></span>
+      <span className="w-full h-[25px] absolute"></span>
 
-      <div className="flex flex-row items-center justify-center lg:w-[820px] xl:w-[820px] md:w-[600px] mobile:w-[350px] ">
+      <div className="flex flex-row items-center justify-center lg:w-[820px] xl:w-[820px] md:w-[600px] absolute mobile:w-[350px] ">
         <h1 className=" text-xl cursor-pointer text-zinc-800 text-opacity-75 leading-9 font-raleway font-light">{aboutEn}</h1>
+      
       </div>
       <Links/>
+      
     </>
   )
 }

@@ -6,6 +6,7 @@ import Skills from './components/skills';
 import Span from './components/span';
 import ActiveSlider2 from './components/carrousel2';
 import SectionTitle from './components/titleSection';
+import Main from './components/main/main';
 
 
 
@@ -62,10 +63,10 @@ const App = () => {
   }, []);
 
   return (
-    <>
-
-      <main ref={mainRef} className="overflow-y-scroll h-screen relative z-10 bg-[#F0F0F0]">
-        <header className='flex justify-end w-screen shadow-md bg-[#FFD700] text-white fixed top-0 font-raleway z-10 h-[60px]'>
+  <>
+  <Main/>
+      {/* <main ref={mainRef} className="overflow-y-scroll h-screen relative z-10 bg-[#F0F0F0]">
+        <header className='flex justify-end w-screen shadow-md glassmorphism-xl-header text-white fixed top-0 font-raleway z-10 h-[60px]'>
           {textButton.map((text, index) => (
             <>
             <NavBar
@@ -82,10 +83,14 @@ const App = () => {
           ))}
         
         </header>
-        <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center mt-10'>
+        <section ref={sectionRefs[0]} className='text-black min-h-screen flex flex-col justify-center items-center '>
           <About />
+          <div className='w-full h-screen '>
+            <img src="./test.png" alt="" className="object-cover h-full w-full"/>
+          </div>
+          
         </section>
-        <Span />
+
         <section ref={sectionRefs[1]} className='min-h-screen flex flex-col justify-center items-center mt-10'>
           <SectionTitle children='Have Experiencie With' />
           <Skills />
@@ -97,8 +102,11 @@ const App = () => {
         </section>
 
         
-      </main>
-    </>
+      </main> */}
+  </>
+
+      
+
   );
 }
 
