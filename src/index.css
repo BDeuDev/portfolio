@@ -24,7 +24,10 @@
   border-radius: 4px;
   backdrop-filter: blur(10px);
 }
-
+.gradient {
+  background: linear-gradient(to right, #151033, #1d3a74, #254ea1,#1d3a74,#151033);
+  background-blend-mode: overlay;
+}
 .content{
   color:#fFFFFF;
 }

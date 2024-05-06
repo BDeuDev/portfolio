@@ -14,7 +14,7 @@ interface BackendProps {
 const Skills:React.FC<BackendProps> = ({active,reference,image,text,title,index}) => {
 
     return (
-        <div className={`flex flex-col   bg-[#111c30]  my-[7%] mx-[15%] h-auto w-auto  rounded-lg shadow-xl  transition transform ease-in-out duration-700 ${active ? 'opacity-100 translate-x-0':'opacity-0 scale-[5%]'}`} ref={reference}>
+        <div className={`flex flex-col   gradient  my-[7%] mx-[15%] h-auto w-auto  rounded-lg shadow-xl  transition transform ease-in-out duration-700 ${active ? 'opacity-100 translate-x-0':'opacity-0 scale-[5%]'}`} ref={reference}>
                 <div className="w-full h-full  flex flex-col justify-center items-center ">
                     <h1 className="text-white text-3xl p-3 mt-3 cursor-pointer  transition transform ease-in-out duration-300 ">
                         {title[index]}
