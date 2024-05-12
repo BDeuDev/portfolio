@@ -30,7 +30,7 @@ const Section0 = () => {
     
     
     return (
-        <div className=" h-full w-full flex flex-col  font-orbitron mt-[2.5%]">
+        <div className=" h-full w-full flex flex-col  font-orbitron ">
             {skillName.map((value,index)=>(
                 <>
                 {console.log(value)}

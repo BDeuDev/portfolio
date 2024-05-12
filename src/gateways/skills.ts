@@ -16,10 +16,10 @@ export const images = [
     ],
     [
         "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-        "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
         "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT16UUOMDO-Ppx1SjgJIAE1XlgVRVqLPYL_pw&s",
         "https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png",
+        "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
         "https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg",
         "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg",
         "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
@@ -64,10 +64,10 @@ export const texts = [
     ],
     [
         "Typescript",
-        "Javascript",
         "React",
         "React-Router",
         "Redux",
+        "Javascript",
         "HTML",
         "CSS",
         "TailwindCSS",

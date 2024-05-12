@@ -3,7 +3,6 @@ import Typed from 'typed.js';
 
 const TypedComponent = () => {
   const typedContainerRef = useRef(null);
-  /*  const [isTyping, setIsTyping] = useState(true); */
   useEffect(() => {
     if (typedContainerRef.current) {
       const typed = new Typed(typedContainerRef.current, {
@@ -29,12 +28,12 @@ const TypedComponent = () => {
 
 
   return (
-    <>
+
       <div className='inline-block text-2xl font-orbitron text-white content'>
-        <h1 ref={typedContainerRef} className='inline-block text-2xl cursor-pointer ' />
+        <h2 ref={typedContainerRef} className='inline-block text-2xl cursor-pointer ' />
       </div>
 
-    </>
+
   )
 };
 

@@ -13,6 +13,12 @@
   backdrop-filter: blur(10px);
 
 }
+.glassmorphism-projects {
+  backdrop-filter: blur(5px);
+  border: 1px solid #b8b4b4;
+  backdrop-filter: blur(5px);
+  border-radius: 3px;
+}
 .glassmorphism-xl-header {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid #fFFFFF;
@@ -34,7 +40,10 @@
 body{
   background: #000000;
 }
-
+.slick-dots button{
+  background-color: #fFFFFF;
+  border-radius: 50%;
+}
 .vapour{
   position: relative;
   display: flex;

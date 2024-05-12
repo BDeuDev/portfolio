@@ -69,7 +69,7 @@ const Main = () => {
             <section ref={sections[1]} className=" w-full    ">
                 <Section1 />
             </section>
-            <section ref={sections[2]} className=" w-full flex flex-col bg-[#1c2b37] justify-center items-center">
+            <section ref={sections[2]} className=" w-full flex flex-col  justify-center items-center">
                 <Section2 />
             </section>
         </main>
