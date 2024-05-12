@@ -5,8 +5,9 @@ import SectionLink from "../header/sectionLink";
 import useIntersection from '../../hooks/useIntersection';
 import Section0 from '../section0/section0';
 import Section1 from '../section1/section1';
-import Section2 from '../section2/section2';
+
 import Smoke from '../section0/smoke';
+import Section2 from '../section2/section2';
 
 
 const Main = () => {
@@ -69,7 +70,7 @@ const Main = () => {
             <section ref={sections[1]} className=" w-full    ">
                 <Section1 />
             </section>
-            <section ref={sections[2]} className=" w-full flex flex-col  justify-center items-center">
+            <section ref={sections[2]} className=" w-full  flex flex-col  justify-center items-center">
                 <Section2 />
             </section>
         </main>

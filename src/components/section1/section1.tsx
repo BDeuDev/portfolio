@@ -6,7 +6,7 @@ import Skills from "./skills";
 
 
 
-const Section0 = () => {
+const Section1 = () => {
     const [isIntersecting1, ref1] = useIntersection({
         threshold: 0.4
     });
@@ -42,4 +42,4 @@ const Section0 = () => {
         </div>
     )
 }
-export default Section0;
+export default Section1;
