@@ -5,14 +5,13 @@ export const images = [
         "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg",
         "https://b.thumbs.redditmedia.com/8RJ1zsSxLbTrSrRAhziwMynfkWVcuFNMXPsLqtGct1o.png",
         "https://images.credly.com/images/1c2c86e1-16ce-4e4d-a425-d1ac96bb026d/express.png",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-        "https://user-images.githubusercontent.com/62756402/219742406-3705ec7a-8fb5-43cf-906e-1d59f5db93c6.png",
+ 
+  
         "https://upload.wikimedia.org/wikipedia/commons/7/7b/MySQL_Dolphin.jpg",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/200px-Postgresql_elephant.svg.png",
         "https://sequelize.org/img/logo.svg",
         "https://miro.medium.com/v2/resize:fit:640/format:webp/1*NS8fBwTgmp061H7o0fETWA.png",
-        "https://upload.wikimedia.org/wikipedia/commons/d/d2/Oauth_logo.svg",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/250px-JSON_vector_logo.svg.png"
+       
     ],
     [
         "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
@@ -53,14 +52,13 @@ export const texts = [
         "Javascript",
         "NodeJs",
         "Express",
-        "Python",
-        "Flask",
+
         "MySQL",
         "PostgreSQL",
         "Sequelize",
         "JWT",
         "Oauth",
-        "JSON"
+
     ],
     [
         "Typescript",

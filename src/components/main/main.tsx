@@ -10,6 +10,7 @@ import Smoke from '../section0/smoke';
 import Section2 from '../section2/section2';
 
 
+
 const Main = () => {
     const mainRef = useRef<HTMLDivElement>(null);
 
@@ -51,7 +52,7 @@ const Main = () => {
     });
 
     return (
-        <main ref={mainRef} className="h-screen w-full  font-orbitron main">
+        <main ref={mainRef} className="h-screen w-full main">
             <header className='fixed glassmorphism-xl-header h-[50px] top-0 w-full border-b-[2px] border-[#30363d] flex flex-row items-center justify-end z-50'>
                 <nav className="flex flex-row items-end justify-end mr-1">
                     {icons.map((icono, index) => (
@@ -62,7 +63,7 @@ const Main = () => {
             <section ref={sections[0]} className=" h-full w-full flex flex-col justify-center items-center">
                 <Section0/>
                 <div className='w-full h-screen ' style={{ zIndex: 10 }}>
-                    <img src="./test.png" alt="" className="object-cover h-full w-full " style={{maskImage: 'linear-gradient(black 90%, transparent)'}}/>
+                    <img src="./bg-2.png" alt="" className="object-cover h-full w-full " style={{maskImage: 'linear-gradient(black 90%, transparent)'}}/>
                     <Smoke/>
                 </div>
                 
@@ -72,6 +73,9 @@ const Main = () => {
             </section>
             <section ref={sections[2]} className=" w-full  flex flex-col  justify-center items-center">
                 <Section2 />
+            </section>
+            <section>
+   
             </section>
         </main>
     );

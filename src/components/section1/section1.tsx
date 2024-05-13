@@ -1,7 +1,7 @@
 import { RefObject } from "react";
 import { skillName, images, texts } from "../../gateways/skills";
 import useIntersection from "../../hooks/useIntersection";
-import Skills from "./skills";
+import Book from "../section2/book";
 
 
 
@@ -31,12 +31,8 @@ const Section1 = () => {
     
     return (
         <div className=" h-full w-full flex flex-col  font-orbitron ">
-            {skillName.map((value,index)=>(
-                <>
-                {console.log(value)}
-                <Skills active={intersectings[index]} image={images[index]} text={texts[index]} reference={sections[index]} title={skillName} index={index} key={index+1}/>
-                </>
-                
+            {skillName.map((skill,index)=>(
+                <Book images={images[index]}  text={texts[index]} title={skill}  key={index+1} active={intersectings[index]} reference={sections[index]}/>
             ))}
             
         </div>
