@@ -5,7 +5,7 @@ import Carousel from "./carousel";
 const Section2 = () => {
 
     return (
-        <div className="h-screen w-full flex flex-col items-center justify-center font-orbitron mt-[12%]">
+        <div className="h-screen w-full flex flex-col items-center justify-center font-orbitron ">
             <Carousel images={projects}/> 
         </div>
     )
