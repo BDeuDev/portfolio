@@ -65,7 +65,7 @@ body{
 .back-cover {
   height: 500px;
   width: 460px;
-  background-image: url('./cover.jpg');
+  background-image: url('./assets/cover.jpg');
 background-size: cover;
 background-position: center;
   border-radius: 2px 20px 20px 2px;
@@ -78,7 +78,7 @@ background-position: center;
 .last-page{
   height: 480px;
   width: 450px;
-  background-image: url('./paper.jpg');
+  background-image: url('./assets/paper.jpg');
 background-size: cover;
 background-position: center;
   position: absolute;
