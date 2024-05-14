@@ -3,9 +3,6 @@ import { skillName, images, texts } from "../../gateways/skills";
 import useIntersection from "../../hooks/useIntersection";
 import Book from "../section2/book";
 
-
-
-
 const Section1 = () => {
     const [isIntersecting1, ref1] = useIntersection({
         threshold: 0.4
@@ -27,7 +24,6 @@ const Section1 = () => {
         isIntersecting2 as boolean,
         isIntersecting3 as boolean
     ]
-    
     
     return (
         <div className=" h-full w-full flex flex-col  font-orbitron ">
