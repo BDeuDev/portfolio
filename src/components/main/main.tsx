@@ -8,6 +8,7 @@ import Section1 from '../section1/section1';
 
 import Smoke from '../section0/smoke';
 import Section2 from '../section2/section2';
+import Menu from '../header/menu';
 
 
 
@@ -58,6 +59,9 @@ const Main = () => {
                     {icons.map((icono, index) => (
                         <SectionLink key={index + 1} icon={icono} onclick={() => scrollToSection(index)} text={texts[index]} active={currentSection === index} />
                     ))}
+                </nav>
+                <nav className='nav-mobile text-white z-50 flex-row items-center justify-center'>
+                    <Menu/>
                 </nav>
             </header>
             <section ref={sections[0]} className=" h-full w-full flex flex-col justify-center items-center">
