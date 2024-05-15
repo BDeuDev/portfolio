@@ -54,7 +54,7 @@ const Main = () => {
     return (
         <main ref={mainRef} className="h-screen w-full main">
             <header className='fixed glassmorphism-xl-header h-[50px] top-0 w-full border-b-[2px] border-[#30363d] flex flex-row items-center justify-end z-50'>
-                <nav className="flex flex-row items-end justify-end mr-1">
+                <nav className="nav-desktop flex-row items-end justify-end mr-1">
                     {icons.map((icono, index) => (
                         <SectionLink key={index + 1} icon={icono} onclick={() => scrollToSection(index)} text={texts[index]} active={currentSection === index} />
                     ))}

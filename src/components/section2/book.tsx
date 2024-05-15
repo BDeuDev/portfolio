@@ -10,19 +10,19 @@ interface BookProps{
 }
 const Book:React.FC<BookProps> = ({images,text,title,active,reference}) => {
   return (
-    <div className={`book ${active ? 'opacity-100 ':'opacity-0 scale-[5%]'} translate-x-[-150px] hover:translate-x-0 my-[300px] mx-auto transition transform ease-in-out duration-700` } ref={reference}>
-        <div className="cover flex flex-col items-center justify-center text-white">
+    <div className={`book ${active ? 'opacity-100 ':'opacity-0 scale-[5%]'} mx-auto lg:w-[35%] mobile:w-11/12 hover:lg:translate-x-[50%] hover:translate-x-0 my-[300px]  transition transform ease-in-out duration-700` } ref={reference}>
+        <div className="cover mobile:w-full flex flex-col items-center justify-center text-white">
             <h2 className='text-2xl font-bold'>
                 {title}
             </h2>
         </div>
-        <div className="page"></div>
-        <div className="page"></div>
-        <div className="page"></div>
-        <div className="page flex flex-col items-center justify-center text-black ">
+        <div className="page mobile:w-[95%]"></div>
+        <div className="page mobile:w-[95%]"></div>
+        <div className="page mobile:w-[95%]"></div>
+        <div className="page flex flex-col items-center justify-center text-black mobile:w-[95%]">
             
         </div>
-        <div className="last-page flex flex-col items-center justify-center">
+        <div className="last-page flex flex-col items-center justify-center mobile:w-[95%]">
         <div className="cube-container justify-start items-center ">
             {images.map((image,index)=>(
                <div className='flex flex-col items-center justify-center' key={index+1}>
@@ -35,7 +35,7 @@ const Book:React.FC<BookProps> = ({images,text,title,active,reference}) => {
             ))}
             </div>
         </div>
-        <div className="back-cover"></div>
+        <div className="back-cover mobile:w-full"></div>
     </div>
   );
 };
