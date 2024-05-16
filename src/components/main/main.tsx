@@ -20,7 +20,7 @@ const Main = () => {
     const [currentSection, setCurrentSection] = useState<number>(0);
     //@ts-ignore
     const {isClicked} = useSelector((state) => state.menu);
-    console.log(isClicked)
+
     const [isIntersecting1, ref1] = useIntersection({
         threshold: 0.6
     });
@@ -79,10 +79,10 @@ const Main = () => {
                 </div>
                 
             </section>
-            <section ref={sections[1]} className=" w-full ">
+            <section ref={sections[1]} className={`w-full transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
                 <Section1 />
             </section>
-            <section ref={sections[2]} className=" w-full  flex flex-col  justify-center items-center">
+            <section ref={sections[2]} className={`w-full  flex flex-col justify-center items-center transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
                 <Section2 />
             </section>
             <section>
