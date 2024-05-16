@@ -188,11 +188,17 @@ background-position: center;
 .nav-mobile{
   display: none;
 }
+.link-c{
+  display: none;
+}
 @media screen and (max-width: 420px) {
   .nav-desktop{
     display: none;
   }
   .nav-mobile{
     display: flex
+  }
+  .link-c{
+    display: flex;
   }
 }

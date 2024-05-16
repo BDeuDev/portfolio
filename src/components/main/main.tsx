@@ -9,6 +9,8 @@ import Section1 from '../section1/section1';
 import Smoke from '../section0/smoke';
 import Section2 from '../section2/section2';
 import Menu from '../header/menu';
+import { useSelector } from 'react-redux';
+import LinkContainer from '../header/linkContainer';
 
 
 
@@ -16,7 +18,9 @@ const Main = () => {
     const mainRef = useRef<HTMLDivElement>(null);
 
     const [currentSection, setCurrentSection] = useState<number>(0);
-
+    //@ts-ignore
+    const {isClicked} = useSelector((state) => state.menu);
+    console.log(isClicked)
     const [isIntersecting1, ref1] = useIntersection({
         threshold: 0.6
     });
@@ -31,7 +35,7 @@ const Main = () => {
         ref2 as RefObject<HTMLDivElement>,
         ref3 as RefObject<HTMLDivElement>
     ];
-    console.log(isIntersecting2)
+
     const intersectings = [
         isIntersecting1,
         isIntersecting2,
@@ -63,8 +67,11 @@ const Main = () => {
                 <nav className='nav-mobile text-white z-50 flex-row items-center justify-center'>
                     <Menu/>
                 </nav>
+                <LinkContainer click={isClicked}/>
+                
             </header>
-            <section ref={sections[0]} className=" h-full w-full flex flex-col justify-center items-center">
+            
+            <section ref={sections[0]} className= {`h-full w-full flex flex-col justify-center items-center transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
                 <Section0/>
                 <div className='w-full h-screen ' style={{ zIndex: 10 }}>
                     <img src="./bg-2.png" alt="" className="object-cover h-full w-full " style={{maskImage: 'linear-gradient(black 90%, transparent)'}}/>
@@ -72,7 +79,7 @@ const Main = () => {
                 </div>
                 
             </section>
-            <section ref={sections[1]} className=" w-full    ">
+            <section ref={sections[1]} className=" w-full ">
                 <Section1 />
             </section>
             <section ref={sections[2]} className=" w-full  flex flex-col  justify-center items-center">
@@ -86,3 +93,5 @@ const Main = () => {
 }
 
 export default Main;
+
+
