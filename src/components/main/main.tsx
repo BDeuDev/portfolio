@@ -58,7 +58,7 @@ const Main = () => {
 
     return (
         <main ref={mainRef} className="h-screen w-full main">
-            <header className='fixed glassmorphism-xl-header h-[50px] top-0 w-full border-b-[2px] border-[#30363d] flex flex-row items-center justify-end z-50'>
+            <header className='fixed glassmorphism-xl-header h-[50px] top-0 w-full border-b-[2px] border-[#ffff] flex flex-row items-center justify-end z-50'>
                 <nav className="nav-desktop flex-row items-end justify-end mr-1">
                     {icons.map((icono, index) => (
                         <SectionLink key={index + 1} icon={icono} onclick={() => scrollToSection(index)} text={texts[index]} active={currentSection === index} />
@@ -67,10 +67,9 @@ const Main = () => {
                 <nav className='nav-mobile text-white z-50 flex-row items-center justify-center'>
                     <Menu/>
                 </nav>
-                <LinkContainer click={isClicked}/>
                 
             </header>
-            
+            <LinkContainer click={isClicked}/>
             <section ref={sections[0]} className= {`h-full w-full flex flex-col justify-center items-center transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
                 <Section0/>
                 <div className='w-full h-screen ' style={{ zIndex: 10 }}>

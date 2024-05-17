@@ -24,6 +24,10 @@
   border-bottom: 1px solid #fFFFFF;
   backdrop-filter: blur(10px);
 }
+.glassmorphism-xl-menu {
+  backdrop-filter: blur(10px);
+  border: 2px solid #fFFFFF;
+}
 .glassmorphism-xl-login {
   backdrop-filter: blur(10px);
   border: 2px solid #fFFFFF;
@@ -38,7 +42,9 @@
   color:#fFFFFF;
 }
 body{
-  background: linear-gradient(to right, #af795e, #474146);
+  background-color: #1d2a3a; 
+
+   /* background: linear-gradient(to right, #2f394a, #1d2a3a); */
 }
 
 .book{
@@ -191,7 +197,7 @@ background-position: center;
 .link-c{
   display: none;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
   .nav-desktop{
     display: none;
   }
