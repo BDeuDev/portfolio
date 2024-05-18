@@ -20,7 +20,7 @@ const Main = () => {
     const [currentSection, setCurrentSection] = useState<number>(0);
     //@ts-ignore
     const {isClicked} = useSelector((state) => state.menu);
-    console.log(isClicked)
+
     const [isIntersecting1, ref1] = useIntersection({
         threshold: 0.6
     });

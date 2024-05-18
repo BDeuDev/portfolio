@@ -10,7 +10,6 @@ const Menu = () => {
   //@ts-ignore
   const {isClicked} = useSelector((state) => state.menu);
   const menuHandler = () => {
-
     if (clicked) {
       setClicked(false);
       dispatch(click())
