@@ -64,7 +64,7 @@ const Smoke= () => {
      
 
     return (
-        <div className="vapour scale-[0.3] absolute left-[67.5%] w-[100px] bottom-[18%]">
+        <div className="mobile:hidden vapour scale-[0.3] absolute left-[67.5%] w-[100px] bottom-[18%]">
             <span style={styles1}></span>
             <span style={styles3}></span>
             <span style={styles16}></span>

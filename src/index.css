@@ -197,7 +197,7 @@ background-position: center;
 .link-c{
   display: none;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 480px) {
   .nav-desktop{
     display: none;
   }

@@ -20,7 +20,7 @@ const Main = () => {
     const [currentSection, setCurrentSection] = useState<number>(0);
     //@ts-ignore
     const {isClicked} = useSelector((state) => state.menu);
-
+    console.log(isClicked)
     const [isIntersecting1, ref1] = useIntersection({
         threshold: 0.6
     });
@@ -58,7 +58,7 @@ const Main = () => {
 
     return (
         <main ref={mainRef} className="h-screen w-full main">
-            <header className='fixed glassmorphism-xl-header h-[50px] top-0 w-full border-b-[2px] border-[#ffff] flex flex-row items-center justify-end z-50'>
+            <header className='fixed bg-[#1d2a3a] h-[50px] top-0 w-full border-b-[0.5px] shadow-xl border-[#ffff] flex flex-row items-center justify-end z-50'>
                 <nav className="nav-desktop flex-row items-end justify-end mr-1">
                     {icons.map((icono, index) => (
                         <SectionLink key={index + 1} icon={icono} onclick={() => scrollToSection(index)} text={texts[index]} active={currentSection === index} />
@@ -66,11 +66,11 @@ const Main = () => {
                 </nav>
                 <nav className='nav-mobile text-white z-50 flex-row items-center justify-center'>
                     <Menu/>
+
                 </nav>
-                
             </header>
             <LinkContainer click={isClicked}/>
-            <section ref={sections[0]} className= {`h-full w-full flex flex-col justify-center items-center transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
+            <section ref={sections[0]} id='section0' className= {` h-full w-full flex flex-col justify-center items-center transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
                 <Section0/>
                 <div className='w-full h-screen ' style={{ zIndex: 10 }}>
                     <img src="./bg-2.png" alt="" className="object-cover h-full w-full " style={{maskImage: 'linear-gradient(black 90%, transparent)'}}/>
@@ -78,10 +78,10 @@ const Main = () => {
                 </div>
                 
             </section>
-            <section ref={sections[1]} className={`w-full transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
+            <section ref={sections[1]} id='section1' className={` w-full transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
                 <Section1 />
             </section>
-            <section ref={sections[2]} className={`w-full  flex flex-col justify-center items-center transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
+            <section ref={sections[2]} id='section2' className={` w-full  flex flex-col justify-center items-center transition transform ease-in-out duration-[1.5s] ${!isClicked ? 'brightness-50' : ''}`}>
                 <Section2 />
             </section>
             <section>
