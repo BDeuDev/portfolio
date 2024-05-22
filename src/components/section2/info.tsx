@@ -1,4 +1,7 @@
 import React from 'react';
+import ExternalLink from './externalLink';
+import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 interface InfoProps {
     title: string;
     tech: string[];
@@ -26,9 +29,11 @@ const Info: React.FC<InfoProps> = ({ title ,tech,description }) => {
                         <p className="absolute text-white text-xl">
                             {description}
                         </p>
+                        
                     </div>
-
+                    <ExternalLink icons={[faGlobeAmericas,faGithub]} texts={['Web','Repo']}/>
                 </div>
+                
             </div>
         </div>
     );
