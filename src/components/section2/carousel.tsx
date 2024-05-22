@@ -36,7 +36,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, width = '100%' }) => {
   };
 
   return (
-    <div style={containerStyle} className='relative my-auto w-3/5 h-full'>
+    <div style={containerStyle} className='mobile:hidden sm:inline-block lg:inline-block xl:inline-block  w-3/5 h-auto '>
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index+1} className='cursor-pointer '>

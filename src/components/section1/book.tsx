@@ -11,8 +11,8 @@ interface BookProps{
 const Book:React.FC<BookProps> = ({images,text,title,active,reference}) => {
   return (
     <div className={`book ${active ? 'opacity-100 ':'opacity-0 scale-[5%]'} mx-auto lg:w-[35%] mobile:w-11/12 hover:lg:translate-x-[50%] hover:translate-x-0 my-[300px]  transition transform ease-in-out duration-700` } ref={reference}>
-        <div className="cover mobile:w-full flex flex-col items-center justify-center text-white">
-            <h2 className='text-2xl font-bold'>
+        <div className="cover mobile:w-full flex flex-col items-center justify-center ">
+            <h2 className='text-4xl font-bold h2-custom'>
                 {title}
             </h2>
         </div>

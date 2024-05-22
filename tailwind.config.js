@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      textShadow: {
+        'custom-shadow': '1px 1px white, -1px -1px #444',
+      },
       screens:{
         'mobile':'320px'
       },
@@ -17,6 +20,9 @@ export default {
         '6/10':'width: 60%'
       },
       colors:{
+        transparent: 'transparent',
+        current: 'currentColor',
+        'custom-shadow': 'rgba(0, 0, 0, 0.5)', // Color de sombra personalizado
         'principal':'#0F1c30',
         'secundario':'#304A6E',
         'neutro':'#668DC0',
@@ -33,5 +39,17 @@ export default {
   },
   mode: 'jit',
   purge: ['./src/**/*.{js,ts,jsx,tsx}', './public/index.html'],
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.text-depressed': {
+          textFillColor: 'transparent',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          textShadow: '1px 1px 2px #ffff inset', // Sombra interior
+        },
+      };
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    },
+  ],
 }

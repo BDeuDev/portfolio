@@ -1,7 +1,7 @@
 import { RefObject } from "react";
 import { skillName, images, texts } from "../../gateways/skills";
 import useIntersection from "../../hooks/useIntersection";
-import Book from "../section2/book";
+import Book from "./book";
 
 const Section1 = () => {
     const [isIntersecting1, ref1] = useIntersection({
