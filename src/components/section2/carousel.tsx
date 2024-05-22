@@ -4,9 +4,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Info from './info';
 import { descriptions, techs, titles } from '../../gateways/info';
-import ExternalLink from './externalLink';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe, faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 interface CarouselProps {
   images: string[];
   width?: string;
@@ -43,7 +40,7 @@ const Carousel: React.FC<CarouselProps> = ({ images, width = '100%' }) => {
       <Slider {...settings}>
         {images.map((image, index) => (
           <div key={index+1} className='cursor-pointer '>
-            <Info title={titles[index]} tech={techs[index]} description={descriptions[index]}/>
+            <Info title={titles[index]} tech={techs[index]} description={descriptions[index]} index={index}/>
             
             <img src={image} alt={`slide-${index}`} style={imageStyle} className='h-4/5 ' />
           </div>

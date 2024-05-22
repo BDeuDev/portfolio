@@ -2,12 +2,14 @@ import React from 'react';
 import ExternalLink from './externalLink';
 import { faGlobeAmericas } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { repoLinks, webLinks } from '../../gateways/links';
 interface InfoProps {
     title: string;
     tech: string[];
-    description:string
+    description: string;
+    index: number;
 }
-const Info: React.FC<InfoProps> = ({ title ,tech,description }) => {
+const Info: React.FC<InfoProps> = ({ title ,tech,description,index }) => {
     return (
         <div className='bg-gray-800 w-full h-full z-40 absolute group bg-opacity-0 hover:bg-opacity-75 transition transform ease-in-out duration-700 '>
             <div className=' absolute group-hover:opacity-100 opacity-0 z-50 transition transform ease-in-out duration-700 '>
@@ -31,7 +33,7 @@ const Info: React.FC<InfoProps> = ({ title ,tech,description }) => {
                         </p>
                         
                     </div>
-                    <ExternalLink icons={[faGlobeAmericas,faGithub]} texts={['Web','Repo']}/>
+                    <ExternalLink icons={[faGlobeAmericas,faGithub]} indexI={index} texts={['Web','Repo']} web={webLinks} repo={repoLinks}/>
                 </div>
                 
             </div>
