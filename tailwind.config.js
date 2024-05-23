@@ -49,7 +49,9 @@ export default {
           textShadow: '1px 1px 2px #ffff inset', // Sombra interior
         },
       };
+      
       addUtilities(newUtilities, ['responsive', 'hover']);
     },
+    require('@tailwindcss/typography'),
   ],
 }

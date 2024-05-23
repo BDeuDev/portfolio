@@ -1,6 +1,6 @@
 export const techs = [
     ["Typescript","React","Node","TailwindCSS"],
-    ["Typescript","React","Node","TailwindCSS","MySQL"],
+    ["Typescript","React","Node","TailwindCSS","PostgreSQL"],
     ["Typescript","React","TailwindCSS"],
 ]
 export const descriptions = [
