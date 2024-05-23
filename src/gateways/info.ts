@@ -6,7 +6,7 @@ export const techs = [
 export const descriptions = [
     "Master Git commands with ease on our GitHub learning platform.",
     "Our app effortlessly creates task cards, simplifying task organization and boosting productivity.",
-    ""
+    "My personal portfolio, featuring all my projects and tech stacks."
 ]
 export const titles = [
     "Space Git Quest",
