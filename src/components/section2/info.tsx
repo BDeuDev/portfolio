@@ -11,8 +11,8 @@ interface InfoProps {
 }
 const Info: React.FC<InfoProps> = ({ title ,tech,description,index }) => {
     return (
-        <div className='bg-gray-800 w-full h-full z-40 absolute group bg-opacity-0 hover:bg-opacity-75 transition transform ease-in-out duration-700 '>
-            <div className=' absolute group-hover:opacity-100 opacity-0 z-50 transition transform ease-in-out duration-700 '>
+        <div className='bg-gray-800 w-full h-full z-40 absolute group lg:bg-opacity-0 xl:bg-opacity-0 hover:bg-opacity-75 mobile:bg-opacity-45 transition transform ease-in-out duration-700 '>
+            <div className=' absolute group-hover:opacity-100 xl:opacity-0 lg:opacity-0 z-50 transition transform ease-in-out duration-700 mobile:opacity-100'>
                 <div className='flex flex-col items-start justify-center mx-8 my-8 gap-5'>
 
                     <h2 className='text-white  p-1 rounded-sm text-2xl'>

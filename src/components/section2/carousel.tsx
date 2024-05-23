@@ -36,13 +36,12 @@ const Carousel: React.FC<CarouselProps> = ({ images, width = '100%' }) => {
   };
 
   return (
-    <div style={containerStyle} className='mobile:hidden sm:inline-block lg:inline-block xl:inline-block  w-3/5 h-auto '>
+    <div style={containerStyle} className='mobile:hidden sm:hidden lg:inline-block xl:inline-block lg:w-3/5 lg:h-auto xl:w-3/5 xl:h-auto '>
       <Slider {...settings}>
         {images.map((image, index) => (
-          <div key={index+1} className='cursor-pointer '>
+          <div key={index+1} className='cursor-pointer rounded-3xl'>
             <Info title={titles[index]} tech={techs[index]} description={descriptions[index]} index={index}/>
-            
-            <img src={image} alt={`slide-${index}`} style={imageStyle} className='h-4/5 ' />
+            <img src={image} alt={`slide-${index}`} style={imageStyle} className='h-4/5 rounded-3xl' />
           </div>
         ))}
       </Slider>
