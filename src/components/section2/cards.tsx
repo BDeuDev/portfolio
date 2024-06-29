@@ -10,7 +10,7 @@ const Cards = () => {
     <div className='w-10/12 h-full  flex-wrap items-center justify-center gap-10 xl:hidden lg:hidden mobile:flex sm:flex '>
       {projects.map((image, index) => (
         <div className='relative flex flex-col items-center justify-center  w-full h-[300px] shadow-2xl border-2 border-white rounded-xl ' key={index + 1}>
-          <div className='absolute inset-0 flex flex-col items-center justify-center p-4 bg-gray-800 bg-opacity-75 rounded-xl gap-4'>
+          <div className='absolute inset-0 flex flex-col items-center justify-center p-4 bg-gray-800 bg-opacity-95 rounded-xl gap-4'>
             <h2 className='text-white text-xl'>{titles[index]}</h2>
 
             <div className='w-11/12 flex flex-wrap items-center justify-center gap-2 '>

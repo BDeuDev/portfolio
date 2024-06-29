@@ -1,5 +1,5 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import {faHome,faRegistered,faQuestion,faUser,faSignOutAlt,faExternalLink,faTools,faTerminal,faCodeBranch} from '@fortawesome/free-solid-svg-icons';
+import {faHome,faUser,faSignOutAlt,faExternalLink,faTools,faCodeBranch} from '@fortawesome/free-solid-svg-icons';
 
 export const icons = [
     faHome,
