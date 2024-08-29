@@ -16,7 +16,7 @@ export default function Header({ scrollToSection, currentSection }: Readonly<Hea
     let lastScrollTop = 0;
 
     const handleScroll = useCallback(() => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
      
         if (scrollTop > lastScrollTop) {
            setIsHidden(true);
