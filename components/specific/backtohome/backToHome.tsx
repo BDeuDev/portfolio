@@ -11,8 +11,8 @@ export default function BackToHome({ scrollToSection }: Readonly<BackToHomeProps
     const { switchState } = useStore();
     return (
         <div className='mt-auto translate-y-[30px]'>
-            <button className={`${style.container} ${switchState ? 'bg-white' : 'bg-black'}  w-[40px] h-[40px]`} onClick={() => scrollToSection(0)}>
-                <FaAnglesUp className={`${switchState ? 'text-black ' : 'text-white'}  text-[1.6rem] text-center w-full `} />
+            <button className={`${style.container} ${switchState ? 'bg-white' : 'bg-[#1e2432]'} w-[40px] h-[40px]`} onClick={() => scrollToSection(0)}>
+                <FaAnglesUp className={`${switchState ? 'text-black ' : 'text-white'}   text-[1.6rem] text-center w-full `} />
             </button>
 
         </div>

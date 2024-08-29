@@ -14,7 +14,7 @@ export default function Projects({ reference, observed, scrollToSection, current
   return (
     <section 
       ref={reference} 
-      className={`min-h-screen ${switchState ? 'bg-[#121725]' : 'bg-[#e7e5e5]'} text-black pt-[64px] flex flex-col items-center justify-center`}
+      className={`min-h-screen ${switchState ? 'bg-[#121725]' : 'bg-[#f5f4f4]'} text-black pt-[64px] flex flex-col items-center justify-center`}
     >
 
       <div className="flex-grow"></div> 

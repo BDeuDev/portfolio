@@ -38,7 +38,7 @@ export default function Header({ scrollToSection, currentSection }: Readonly<Hea
     }, [handleScroll]);
     const text = switchState ? 'text-white' : 'text-black';
     return (
-        <header className={`${isHidden ? styles.hidden : ''} ${styles.header} bg-[#1e2432] h-[64px] w-full z-50 flex flex-row items-center justify-center shadow-md   fixed top-0`}>
+        <header className={`${isHidden ? styles.hidden : ''} ${styles.header} ${switchState ? 'bg-[#1e2432]' : 'bg-[#d0d0d0]'}  h-[64px] w-full z-50 flex flex-row items-center justify-center shadow-md   fixed top-0`}>
             <nav className="w-full h-full">
                 <div className="flex items-center justify-center gap-5 p-2 list-none h-full text-white">
                     {sectionName.map((section, index) => {
