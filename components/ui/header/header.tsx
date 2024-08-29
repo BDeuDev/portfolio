@@ -33,7 +33,7 @@ export default function Header({ scrollToSection, currentSection }: Readonly<Hea
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
-    }, [handleScroll]);
+    });
     const text = switchState ? 'text-white' : 'text-black';
     return (
         <header className={`${isHidden ? styles.hidden : ''} ${styles.header} bg-[#1e2432] h-[64px] w-full z-50 flex flex-row items-center justify-center shadow-md   fixed top-0`}>
