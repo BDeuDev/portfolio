@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import styles from './header.module.css';
 import './header.css'
 import ThemeSwitch from '@/components/specific/themeSwitch/themeSwitch';
@@ -12,28 +12,30 @@ interface HeaderProps {
 export default function Header({ scrollToSection, currentSection }: Readonly<HeaderProps>) {
     const sectionName = ['Home', 'About me', 'Technologies', 'Projects'];
     const [isHidden, setIsHidden] = useState(false);
+
     let lastScrollTop = 0;
-  
-    const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  
-      if (scrollTop > lastScrollTop) {
-        setIsHidden(true);
-      } else {
-        setIsHidden(false);
-      }
-  
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-    };
+
+    const handleScroll = useCallback(() => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+     
+        if (scrollTop > lastScrollTop) {
+           setIsHidden(true);
+        } else {
+           setIsHidden(false);
+        }
+     
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+     }, []);
     const { switchState, setSwitchState } = useStore();
 
     const handleChange = (event: { target: { checked: boolean; }; }) => {
       setSwitchState(event.target.checked);
     };
+    
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
-    });
+    }, []);
     const text = switchState ? 'text-white' : 'text-black';
     return (
         <header className={`${isHidden ? styles.hidden : ''} ${styles.header} bg-[#1e2432] h-[64px] w-full z-50 flex flex-row items-center justify-center shadow-md   fixed top-0`}>
