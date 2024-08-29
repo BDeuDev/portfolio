@@ -11,7 +11,6 @@ export default function Home({ reference, observed }: Readonly<HomeProps>) {
   const { switchState } = useStore();
 
   const baseClass = observed ? 'opacity-100' : 'opacity-0';
-  const glowingClass = switchState ? 'text-glowing-dark' : 'text-glowing-light';
   const glowingClass2 = switchState ? 'text-glowing-dark-2' : 'text-glowing-light-2';
   const text = switchState ? 'text-light' : 'text-dark';
   const text2 = switchState ? 'text-white ' : 'text-black';
