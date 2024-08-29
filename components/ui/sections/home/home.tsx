@@ -19,7 +19,7 @@ export default function Home({ reference, observed }: Readonly<HomeProps>) {
       <h2 className={`${baseClass} ${observed ? text2 : 'translate-x-[-200px]'} welcome text-[5em] transition transform ease-in-out duration-[2s]`}>Welcome!</h2>
       <div className="flex flex-row  w-auto text-[1.4em]  my-[70px]">
         <div className="mx-4">
-          <h2 className={`${baseClass} ${observed ? text : 'translate-y-[-200px]'} leading-[0.70rem] tracking-[15px] outline-none transition transform ease-in-out duration-[2s]`}>I'm</h2>
+          <h2 className={`${baseClass} ${observed ? text : 'translate-y-[-200px]'} leading-[0.70rem] tracking-[15px] outline-none transition transform ease-in-out duration-[2s]`}>I&apos;m</h2>
         </div>
         <h2 className={`${baseClass} ${observed ? text : 'translate-x-[200px]'} transition transform ease-in-out duration-[2s]`}>Bernabe Deusich a</h2>
       </div>
