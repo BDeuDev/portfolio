@@ -1,0 +1,25 @@
+
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@property --transparency {
+    syntax: "<percentage>";
+    initial-value: 80%;
+    inherits: false;
+}
+
+@keyframes spin {
+    0% {
+        --angle: 0deg;
+        --transparency: 80%;
+    }
+
+    100% {
+        --angle: 360deg;
+        --transparency: 0%;
+    }
+}

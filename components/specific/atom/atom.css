@@ -1,0 +1,73 @@
+.container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border: 3px solid;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 
+        0 0 5px #00c3ff,   /* Sombra hacia afuera */
+        0 0 10px #00c3ff,   /* Sombra hacia afuera */
+        0 0 15px #00c3ff,   /* Sombra hacia afuera */
+        0 0 20px #00c3ff,   /* Sombra hacia afuera */
+        inset 0 0 5px #00c3ff,   /* Sombra hacia adentro */
+        inset 0 0 10px #00c3ff,   /* Sombra hacia adentro */
+        inset 0 0 15px #00c3ff,   /* Sombra hacia adentro */
+        inset 0 0 20px #00c3ff;   /* Sombra hacia adentro */
+}
+
+.one {
+    border-color: #304e5a;
+    animation: animate01 5s linear infinite;
+}
+
+.two {
+    border-color: #304e5a;
+    animation: animate02 5s linear infinite;
+}
+
+.three {
+    border-color: #304e5a;
+    animation: animate03 5s linear infinite;
+}
+
+@keyframes animate01 {
+    0%, 100% {
+        rotate: 0deg;
+        width: 100%;
+    }
+    50% {
+        rotate: 180deg;
+        width: 40%;
+    }
+}
+
+@keyframes animate02 {
+    0%, 100% {
+        rotate: 360deg;
+        width: 100%;
+    }
+    50% {
+        rotate: 180deg;
+        width: 40%;
+    }
+}
+
+@keyframes animate03 {
+    0%, 100% {
+        rotate: 720deg;
+        width: 100%;
+    }
+    50% {
+        rotate: 180deg;
+        width: 40%;
+    }
+}

@@ -1,0 +1,12 @@
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    top: 0;
+    transition: top 0.5s;
+    z-index: 1000;
+  }
+  
+  .hidden {
+    top: -100px; /* Oculta el header */
+  }
