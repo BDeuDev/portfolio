@@ -13,7 +13,7 @@ export default function Home({ reference, observed }: Readonly<HomeProps>) {
   const baseClass = observed ? 'opacity-100' : 'opacity-0';
   const glowingClass2 = switchState ? 'text-glowing-dark-2' : 'text-glowing-light-2';
   const text = switchState ? 'text-light' : 'text-dark';
-  const text2 = switchState ? 'text-white ' : 'text-black';
+  const text2 = switchState ? 'text-white ' : 'text-[#030136]';
   return (
     <section ref={reference} className={`min-h-screen ${switchState ? 'bg-[#121725]' : 'bg-[#f5f4f4]'} text-black pt-[64px] flex flex-col items-center justify-center`}>
       <h2 className={`${baseClass} ${observed ? text2 : 'translate-x-[-200px]'} welcome text-[5em] transition transform ease-in-out duration-[2s]`}>Welcome!</h2>
