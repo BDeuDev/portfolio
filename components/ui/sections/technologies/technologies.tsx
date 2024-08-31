@@ -12,7 +12,7 @@ export default function Technologies({reference,observed}: Readonly<Technologies
   const { switchState } = useStore();
   return (
     <section ref={reference} className={`min-h-screen ${switchState ? 'bg-[#121725]' : 'bg-[#f5f4f4]'} text-black pt-[64px] flex flex-col items-center justify-center`}>
-        <BentoGrid/>
+        <BentoGrid observed={observed}/>
     </section>
   );
 }
