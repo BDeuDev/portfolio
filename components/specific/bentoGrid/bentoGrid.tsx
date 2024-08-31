@@ -1,10 +1,13 @@
+import { RefObject } from "react";
+
 interface BentoGridProps {
     observed: boolean;
+    reference: RefObject<HTMLDivElement>;
 }
 
-export default function BentoGrid({observed}: Readonly<BentoGridProps>) {
+export default function BentoGrid({observed,reference}: Readonly<BentoGridProps>) {
     return (
-        <div className="flex min-h-screen w-full items-center justify-center p-6">
+        <div className={`flex min-h-screen w-full items-center justify-center p-6 `} ref={reference}>
             <div className="grid h-[600px] w-[650px] grid-cols-10 grid-rows-10 gap-4">
                 <div className="col-span-4 row-span-2 bg-white rounded-2xl flex justify-center items-center">
                     <img src="./mysql.png" alt="" className="object-contain w-full h-full rounded-2xl" />
@@ -22,7 +25,7 @@ export default function BentoGrid({observed}: Readonly<BentoGridProps>) {
                 <div className="col-span-2 row-span-2 bg-white rounded-2xl flex justify-center items-center">
                     <img src="./express.svg" alt="" className="object-contain w-full h-full rounded-2xl" />
                 </div>
-                <div className="col-span-6 row-span-4  rounded-2xl flex justify-center items-center  bg-green-900">
+                <div className={`col-span-6 row-span-4 ${observed ? ' opacity-100' : 'opacity-0 translate-x-[200px]'} transition transform ease-in-out duration-[1.5s] rounded-2xl flex justify-center items-center  bg-green-900`}>
                     <img src="./nodejs.png" alt="" className="object-cover w-full h-full rounded-2xl" />
 
                 </div>
@@ -32,7 +35,7 @@ export default function BentoGrid({observed}: Readonly<BentoGridProps>) {
                 <div className="col-span-2 row-span-2 bg-black rounded-2xl flex justify-center items-center">
                     <img src="./nestjs.svg" alt="" className="object-contain w-full h-full rounded-2xl" />
                 </div>
-                <div className="col-span-6 row-span-2 bg-[#1e2432] text-white rounded-2xl flex justify-center items-center font-semibold ">Principal Backend Technologies</div>
+                <div className={`col-span-6 row-span-2 bg-[#1e2432] text-white rounded-2xl flex justify-center items-center font-semibold ${observed ? ' opacity-100' : 'opacity-0 translate-y-[200px]'} transition transform ease-in-out duration-1000`}>Principal Backend Technologies</div>
                 <div className="col-span-2 row-span-2 bg-indigo-400 rounded-2xl flex justify-center items-center">
                     <img src="./ts-logo-128.svg" alt="" className="object-cover w-full h-full rounded-2xl" />
                 </div>

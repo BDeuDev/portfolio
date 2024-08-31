@@ -7,7 +7,6 @@ import About from "@/components/ui/sections/about/about";
 import Technologies from "@/components/ui/sections/technologies/technologies";
 import Projects from "@/components/ui/sections/projects/projects";
 import Footer from "@/components/ui/footer/footer";
-import useStore from "@/store/store";
 import Line from "@/components/common/lineSection/line";
 
 export default function App() {
