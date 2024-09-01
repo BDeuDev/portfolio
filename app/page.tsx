@@ -19,7 +19,7 @@ export default function App() {
     threshold: 0.6
   });
   const [isIntersecting3, ref3] = useIntersection({
-    threshold: 0.6
+    threshold: 0.2
   });
   const [isIntersecting4, ref4] = useIntersection({
     threshold: 0.6
