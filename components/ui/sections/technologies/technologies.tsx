@@ -1,7 +1,9 @@
+import { techs } from "@/components/lib/data";
+import BentoCell from "@/components/specific/bentoGrid/bentoCell";
 import BentoGrid from "@/components/specific/bentoGrid/bentoGrid";
 import useIntersection from "@/hooks/useIntersection";
 import useStore from "@/store/store";
-import { RefObject } from "react";
+import { RefObject, useEffect } from "react";
 
 interface TechnologiesProps {
     reference: RefObject<HTMLDivElement>;
@@ -32,11 +34,27 @@ export default function Technologies({reference,observed}: Readonly<Technologies
     isIntersecting3 as boolean,
 
   ];
+ 
   return (
     <section ref={reference} className={`min-h-screen ${switchState ? 'bg-[#121725]' : 'bg-[#f5f4f4]'} text-black pt-[64px] flex flex-col items-center justify-center`}>
-        <BentoGrid observed={intersectings[0]} reference={refs[0]}/>
-        <BentoGrid observed={intersectings[1]} reference={refs[1]}/>
-        <BentoGrid observed={intersectings[2]} reference={refs[2]}/>
+        {techs.map((_,index)=>(
+         <BentoGrid key={index + 1} observed={intersectings[index]} reference={refs[index]}>
+          {techs[0].map((_,indexC)=>(
+            <BentoCell key={indexC} colSpan={techs[index][indexC]?.colSpan}
+                    rowSpan={techs[index][indexC]?.rowSpan}
+                    observed={intersectings[index]}
+                    bgColor={techs[index][indexC]?.bgColor}
+                    object={techs[index][indexC]?.object}
+                    imageSrc={techs[index][indexC]?.imageSrc}
+                    additionalClasses={techs[index][indexC]?.additionalClasses}
+                    text={techs[index][indexC]?.text}
+                    altText={techs[index][indexC]?.altText}
+                    duration={techs[index][indexC]?.duration}
+                    animationClasses={techs[index][indexC]?.animationClasses}/>
+          ))}
+            
+          </BentoGrid>
+        ))}
     </section>
   );
 }
