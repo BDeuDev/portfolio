@@ -197,19 +197,64 @@ export const techs = [[{
 }
 ],
 [{
-    colSpan: 4,
+    colSpan: 2,
     rowSpan: 2,
-    imageSrc: "./mysql.png",
-    altText: "MySQL",
+    imageSrc: "./github.svg",
+    altText: "GitHub",
     bgColor: "bg-white",
     additionalClasses: "",
     duration: "duration-[1.5s]",
     animationClasses: "translate-x-[-200px] opacity-0"
 }, {
-    colSpan: 4,
+    colSpan: 2,
     rowSpan: 2,
-    imageSrc: "./mysql.png",
-    altText: "MySQL",
+    imageSrc: "./git.svg",
+    altText: "Git",
+    bgColor: "bg-white",
+    additionalClasses: "",
+    duration: "duration-[1.5s]",
+    animationClasses: "translate-x-[-200px] opacity-0"
+},{
+    colSpan: 2,
+    rowSpan: 2,
+    imageSrc: "./vscode.svg",
+    altText: "VSC",
+    bgColor: "bg-white",
+    additionalClasses: "",
+    duration: "duration-[1.5s]",
+    animationClasses: "translate-x-[-200px] opacity-0"
+},{
+    colSpan: 2,
+    rowSpan: 2,
+    imageSrc: "./postman.svg",
+    altText: "Postman",
+    bgColor: "bg-white",
+    additionalClasses: "",
+    duration: "duration-[1.5s]",
+    animationClasses: "translate-x-[-200px] opacity-0"
+},{
+    colSpan: 2,
+    rowSpan: 2,
+    imageSrc: "./figma.svg",
+    altText: "Figma",
+    bgColor: "bg-white",
+    additionalClasses: "",
+    duration: "duration-[1.5s]",
+    animationClasses: "translate-x-[-200px] opacity-0"
+},{
+    colSpan: 2,
+    rowSpan: 2,
+    imageSrc: "./trello.svg",
+    altText: "Trello",
+    bgColor: "bg-white",
+    additionalClasses: "",
+    duration: "duration-[1.5s]",
+    animationClasses: "translate-x-[-200px] opacity-0"
+},{
+    colSpan: 2,
+    rowSpan: 2,
+    imageSrc: "./slack.svg",
+    altText: "Slack",
     bgColor: "bg-white",
     additionalClasses: "",
     duration: "duration-[1.5s]",
