@@ -1,39 +1,34 @@
-// src/components/BentoCell.tsx
-import React from 'react';
-
 interface BentoCellProps {
-    colSpan?: number;
-    rowSpan?: number;
-    observed?: boolean;
-    imageSrc?: string;
-    altText?: string;
-    bgColor?: string;
+    rowSpan: string;
+    colSpan: string;
+    imgSrc: string;
+    imgH: string;
+    imgFit: string;
+    bgColor: string;
+    observed: boolean;
     text?: string;
-    object?: string;
-    additionalClasses?: string;
-    animationClasses?: string;
-    duration?: string;
+    animationClasses: string;
+    duration: string;
+    altText: string;
 }
 
-const BentoCell: React.FC<BentoCellProps> = ({
-    colSpan,
-    rowSpan,
-    observed,
-    imageSrc,
+export default function BentoCell({
+    colSpan, 
+    rowSpan, 
+    imgSrc, 
     altText,
-    bgColor,
+    bgColor, 
+    imgFit, 
+    imgH,
+    observed,
     text,
-    object,
-    additionalClasses = "",
-    duration,
-    animationClasses = ""
-}) => {
+    animationClasses,
+    duration
+}: Readonly<BentoCellProps>) {
     return (
-        <div className={`col-span-${colSpan} row-span-${rowSpan} ${observed ? 'opacity-100' : animationClasses }  transition transform ease-in-out ${bgColor} rounded-2xl flex justify-center items-center ${duration} ${imageSrc ? 'shadow-2xl' : ''} `}>
-            {imageSrc && <img src={imageSrc} alt={altText} className={`object-${object ? object : 'contain'} ${additionalClasses ? additionalClasses : 'h-full'} w-full  ${altText === 'NextJS' ? '' : 'rounded-[15px]'}`} /> }
-            <h2 className='text-white font-medium'>{text}</h2>
+        <div className={`${colSpan} ${rowSpan} ${bgColor} rounded-2xl ${observed ? "opacity-100" : animationClasses} flex items-center justify-center  transition transform ease-in-out ${duration} shadow-2xl`}>
+            <img src={imgSrc} alt={altText} className={` ${imgFit} ${imgH} rounded-xl`} />
+            <h2 className="text-gray-100">{text}</h2>
         </div>
     );
-};
-
-export default BentoCell;
+}

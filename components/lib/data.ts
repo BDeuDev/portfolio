@@ -1,262 +1,158 @@
-export const techs = [[{
-    colSpan: 4,
-    rowSpan: 2,
-    imageSrc: "./mysql.png",
-    altText: "MySQL",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-}, {
-    colSpan: 4,
-    rowSpan: 2,
-    imageSrc: "./sequelize.svg",
-    altText: "Sequelize",
-    bgColor: "bg-[#1e2432]",
-    additionalClasses: "h-[90%]",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-y-[-100px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./py.png",
-    altText: "Python",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-100px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./postgre.png",
-    altText: "Postgre",
-    bgColor: "bg-white",
-    object: "contain",
-    additionalClasses: "h-[90%]",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-100px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./express.svg",
-    altText: "Express",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[100px] opacity-0"
-},{
-    colSpan: 6,
-    rowSpan: 4,
-    imageSrc: "./nodejs.png",
-    altText: "NodeJS",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[200px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./mongodb.svg",
-    altText: "MongoDB",
-    bgColor: "bg-green-900",
-    additionalClasses: "h-[90%]",
-    duration: "duration-[2s]",
-    animationClasses: "translate-x-[-150px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./nestjs.svg",
-    altText: "NestJS",
-    bgColor: "bg-[#1e2432]",
-    additionalClasses: "h-[90%]",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-100px] opacity-0"
-},{
-    colSpan: 6,
-    rowSpan: 2,
-    imageSrc: "",
-    altText: "",
-    text: "Principal Backend Technologies",
-    bgColor: "bg-[#1e2432]",
-    additionalClasses: "",
-    duration: "duration-[2.5s]",
-    animationClasses: "translate-x-[-100px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./ts-logo-128.svg",
-    altText: "Typescript",
-    text: "",
-    object: "cover",
-    bgColor: "bg-[#1e2432]",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[100px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./js.svg",
-    altText: "Javascript",
-    text: "",
-    object: "cover",
-    bgColor: "bg-black",
-    additionalClasses: "",
-    duration: "duration-[2s]",
-    animationClasses: "translate-x-[150px] opacity-0"
-}],
-
-[{
-    colSpan: 4,
-    rowSpan: 4,
-    imageSrc: "./react.svg",
-    altText: "React",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-}, {
-    colSpan: 4,
-    rowSpan: 2,
-    imageSrc: "./next.svg",
-    altText: "NextJS",
-    bgColor: "bg-white",
-    object: '',
-    additionalClasses: "w-[90%]",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./tailwindcss.svg",
-    altText: "TailwindCSS",
-    bgColor: "bg-white",
-    additionalClasses: "w-[90%]",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./html.svg",
-    altText: "HTML",
-    text: "",
-    object: "",
-    bgColor: "bg-black",
-    additionalClasses: "h-[85%]",
-    duration: "duration-[2s]",
-    animationClasses: "translate-x-[150px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./css.svg",
-    altText: "CSS3",
-    bgColor: "bg-black",
-    additionalClasses: "w-[85%]",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./js.svg",
-    altText: "Javascript",
-    text: "",
-    object: "cover",
-    bgColor: "bg-black",
-    additionalClasses: "",
-    duration: "duration-[2s]",
-    animationClasses: "translate-x-[150px] opacity-0"
-},{
-    colSpan: 6,
-    rowSpan: 2,
-    imageSrc: "",
-    altText: "",
-    text: "Principal Frontend Technologies",
-    bgColor: "bg-[#1e2432]",
-    additionalClasses: "",
-    duration: "duration-[2.5s]",
-    animationClasses: "translate-x-[-100px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./ts-logo-128.svg",
-    altText: "Typescript",
-    text: "",
-    object: "cover",
-    bgColor: "bg-[#1e2432]",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[100px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./sass.svg",
-    altText: "TailwindCSS",
-    bgColor: "bg-[#1e2432]",
-    additionalClasses: "w-[85%]",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
+interface BentoCellProps {
+    rowSpan: string;
+    colSpan: string;
+    imgSrc: string;
+    imgH: string;
+    imgFit: string;
+    bgColor: string;
+    animationClasses: string;
+    duration: string;
+    altText: string;
+    text?:string;
 }
-],
-[{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./github.svg",
-    altText: "GitHub",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-}, {
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./git.svg",
-    altText: "Git",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./vscode.svg",
-    altText: "VSC",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./postman.svg",
-    altText: "Postman",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./figma.svg",
-    altText: "Figma",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./trello.svg",
-    altText: "Trello",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-},{
-    colSpan: 2,
-    rowSpan: 2,
-    imageSrc: "./slack.svg",
-    altText: "Slack",
-    bgColor: "bg-white",
-    additionalClasses: "",
-    duration: "duration-[1.5s]",
-    animationClasses: "translate-x-[-200px] opacity-0"
-}]];
+export const techs: BentoCellProps[][] = [
+    [
+        {
+            rowSpan: "row-span-2",
+            colSpan: "col-span-4",
+            imgSrc: "./mysql.png",
+            imgH: "h-[90%]",
+            imgFit: "object-contain",
+            bgColor: "bg-white",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },
+        {
+            rowSpan: "row-span-2",
+            colSpan: "col-span-4",
+            imgSrc: "./express.png",
+            imgH: "h-[90%] w-[90%]",
+            imgFit: "object-cover",
+            bgColor: "bg-white",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./py.png",
+            imgH: "w-[90%]",
+            imgFit: "object-cover",
+            bgColor: "bg-white",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./postgre.png",
+            imgH: "w-[80%]",
+            imgFit: "object-cover",
+            bgColor: "bg-white",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./sequelize.svg",
+            imgH: "w-[80%]",
+            imgFit: "object-cover",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        }
+        ,{
+            rowSpan: "row-span-4",
+            colSpan: "col-span-6",
+            imgSrc: "./nodejs.png",
+            imgH: "w-[80%] h-[90%]",
+            imgFit: "object-cover",
+            bgColor: "bg-white",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./mongodb.svg",
+            imgH: "w-[80%]",
+            imgFit: "object-cover",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./nestjs.svg",
+            imgH: "w-[80%]",
+            imgFit: "object-cover",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-6",
+            imgSrc: "",
+            imgH: "",
+            imgFit: "",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "",
+            duration: "",
+            altText: "",
+            text: "Principal Backend Technologies"
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./ts-logo-128.svg",
+            imgH: "h-[100%] w-full",
+            imgFit: "object-cover",
+            bgColor: "bg-[#3178c6]",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./js.svg",
+            imgH: "h-[100%] w-full",
+            imgFit: "object-cover",
+            bgColor: "bg-black",
+            animationClasses: "",
+            duration: "",
+            altText: "",
+            
+        }
+        
+    ],
+    [
+        {
+            rowSpan: "row-span-2",
+            colSpan: "col-span-4",
+            imgSrc: "",
+            imgH: "",
+            imgFit: "",
+            bgColor: "",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        }
+    ],
+    [
+        {
+            rowSpan: "",
+            colSpan: "",
+            imgSrc: "",
+            imgH: "",
+            imgFit: "",
+            bgColor: "",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        }
+    ]
+]
