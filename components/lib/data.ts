@@ -30,8 +30,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "h-[90%] w-[90%]",
             imgFit: "object-cover",
             bgColor: "bg-white",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-y-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -40,8 +40,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "w-[90%]",
             imgFit: "object-cover",
             bgColor: "bg-white",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-y-[-100px] opacity-0",
+            duration: "duration-[2.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -50,8 +50,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "w-[80%]",
             imgFit: "object-cover",
             bgColor: "bg-white",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[2s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -60,8 +60,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "w-[80%]",
             imgFit: "object-cover",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-x-[-90px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         }
         ,{
@@ -71,8 +71,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "w-[80%] h-[90%]",
             imgFit: "object-cover",
             bgColor: "bg-white",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -81,8 +81,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "w-[80%]",
             imgFit: "object-cover",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[2s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -91,8 +91,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "w-[80%]",
             imgFit: "object-cover",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-x-[-90px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -101,8 +101,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "",
             imgFit: "",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-y-[100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: "",
             text: "Principal Backend Technologies"
         },{
@@ -112,6 +112,71 @@ export const techs: BentoCellProps[][] = [
             imgH: "h-[100%] w-full",
             imgFit: "object-cover",
             bgColor: "bg-[#3178c6]",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./js.svg",
+            imgH: "h-[100%] w-full",
+            imgFit: "object-cover",
+            bgColor: "bg-black",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: "",
+            
+        }
+        
+    ],
+    [
+        {
+            rowSpan: "row-span-4",
+            colSpan: "col-span-4",
+            imgSrc: "./react.svg",
+            imgH: "h-[90%]",
+            imgFit: "",
+            bgColor: "bg-white",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-4",
+            colSpan: "col-span-4",
+            imgSrc: "./next.svg",
+            imgH: "w-[90%]",
+            imgFit: "",
+            bgColor: "bg-white",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-4",
+            colSpan: "col-span-2",
+            imgSrc: "./redux.svg",
+            imgH: "w-[90%]",
+            imgFit: "",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./html.svg",
+            imgH: "h-[90%]",
+            imgFit: "",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "",
+            duration: "",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./css.svg",
+            imgH: "h-[90%]",
+            imgFit: "",
+            bgColor: "bg-[#1e2432]",
             animationClasses: "",
             duration: "",
             altText: ""
@@ -121,37 +186,73 @@ export const techs: BentoCellProps[][] = [
             imgSrc: "./js.svg",
             imgH: "h-[100%] w-full",
             imgFit: "object-cover",
-            bgColor: "bg-black",
+            bgColor: "bg-[#1e2432]",
             animationClasses: "",
             duration: "",
-            altText: "",
-            
-        }
-        
-    ],
-    [
-        {
+            altText: ""
+        },{
             rowSpan: "row-span-2",
-            colSpan: "col-span-4",
+            colSpan: "col-span-2",
+            imgSrc: "./ts-logo-128.svg",
+            imgH: "h-[100%] w-full",
+            imgFit: "object-cover",
+            bgColor: "bg-[#3178c6]",
+            animationClasses: "translate-xd-[100px] opacity-0",
+            duration: "duration-[1.5ds]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./sass.svg",
+            imgH: " h-[90%]",
+            imgFit: "object-cover",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "translate-xd-[100px] opacity-0",
+            duration: "duration-[1.5ds]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-6",
             imgSrc: "",
             imgH: "",
             imgFit: "",
-            bgColor: "",
-            animationClasses: "",
-            duration: "",
+            text: "Principal Frontend Technologies",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "translate-xd-[100px] opacity-0",
+            duration: "duration-[1.5ds]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-4",
+            imgSrc: "./tailwindcss.svg",
+            imgH: "h-[100%]",
+            imgFit: "",
+            bgColor: "bg-white",
+            animationClasses: "translate-xd-[100px] opacity-0",
+            duration: "duration-[1.5ds]",
             altText: ""
         }
     ],
     [
         {
-            rowSpan: "",
-            colSpan: "",
-            imgSrc: "",
-            imgH: "",
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./vscode.svg",
+            imgH: "h-[100%]",
             imgFit: "",
-            bgColor: "",
-            animationClasses: "",
-            duration: "",
+            bgColor: "bg-white",
+            animationClasses: "translate-xd-[100px] opacity-0",
+            duration: "duration-[1.5ds]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./vscode.svg",
+            imgH: "h-[100%]",
+            imgFit: "",
+            bgColor: "bg-white",
+            animationClasses: "translate-xd-[100px] opacity-0",
+            duration: "duration-[1.5ds]",
             altText: ""
         }
     ]
