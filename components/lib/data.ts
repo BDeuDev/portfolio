@@ -137,8 +137,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "h-[90%]",
             imgFit: "",
             bgColor: "bg-white",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-y-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-4",
@@ -147,8 +147,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "w-[90%]",
             imgFit: "",
             bgColor: "bg-white",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-y-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-4",
@@ -157,8 +157,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "w-[90%]",
             imgFit: "",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -167,8 +167,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "h-[90%]",
             imgFit: "",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -177,8 +177,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "h-[90%]",
             imgFit: "",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -187,8 +187,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "h-[100%] w-full",
             imgFit: "object-cover",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "",
-            duration: "",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -197,8 +197,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "h-[100%] w-full",
             imgFit: "object-cover",
             bgColor: "bg-[#3178c6]",
-            animationClasses: "translate-xd-[100px] opacity-0",
-            duration: "duration-[1.5ds]",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -207,8 +207,8 @@ export const techs: BentoCellProps[][] = [
             imgH: " h-[90%]",
             imgFit: "object-cover",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "translate-xd-[100px] opacity-0",
-            duration: "duration-[1.5ds]",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -218,8 +218,8 @@ export const techs: BentoCellProps[][] = [
             imgFit: "",
             text: "Principal Frontend Technologies",
             bgColor: "bg-[#1e2432]",
-            animationClasses: "translate-xd-[100px] opacity-0",
-            duration: "duration-[1.5ds]",
+            animationClasses: "translate-y-[100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
@@ -228,8 +228,8 @@ export const techs: BentoCellProps[][] = [
             imgH: "h-[100%]",
             imgFit: "",
             bgColor: "bg-white",
-            animationClasses: "translate-xd-[100px] opacity-0",
-            duration: "duration-[1.5ds]",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         }
     ],
