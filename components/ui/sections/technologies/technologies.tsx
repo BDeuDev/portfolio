@@ -15,13 +15,13 @@ interface TechnologiesProps {
 export default function Technologies({ reference, observed }: Readonly<TechnologiesProps>) {
   const { switchState } = useStore();
   const [isIntersecting1, ref1] = useIntersection({
-    threshold: 0.6
+    threshold: 0.7
   });
   const [isIntersecting2, ref2] = useIntersection({
-    threshold: 0.6
+    threshold: 0.7
   });
   const [isIntersecting3, ref3] = useIntersection({
-    threshold: 0.6
+    threshold: 0.7
   });
   const refs = [
     ref1 as RefObject<HTMLDivElement>,

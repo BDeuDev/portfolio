@@ -238,22 +238,104 @@ export const techs: BentoCellProps[][] = [
             rowSpan: "row-span-2",
             colSpan: "col-span-2",
             imgSrc: "./vscode.svg",
-            imgH: "h-[100%]",
+            imgH: "h-[90%]",
             imgFit: "",
-            bgColor: "bg-white",
-            animationClasses: "translate-xd-[100px] opacity-0",
-            duration: "duration-[1.5ds]",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
         },{
             rowSpan: "row-span-2",
             colSpan: "col-span-2",
-            imgSrc: "./vscode.svg",
-            imgH: "h-[100%]",
+            imgSrc: "./git.svg",
+            imgH: "h-[90%]",
+            imgFit: "",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./postman.svg",
+            imgH: "h-[90%]",
             imgFit: "",
             bgColor: "bg-white",
-            animationClasses: "translate-xd-[100px] opacity-0",
-            duration: "duration-[1.5ds]",
+            animationClasses: "translate-y-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
             altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./slack.svg",
+            imgH: "h-[90%]",
+            imgFit: "",
+            bgColor: "bg-white",
+            animationClasses: "translate-y-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },{
+            rowSpan: "row-span-4",
+            colSpan: "col-span-2",
+            imgSrc: "./figma.svg",
+            imgH: "w-[90%]",
+            imgFit: "object-contain ",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./github.svg",
+            imgH: "h-[90%]",
+            imgFit: "",
+            bgColor: "bg-white",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./trello.svg",
+            imgH: "h-[100%] w-full",
+            imgFit: "object-cover",
+            bgColor: "bg-white",
+            animationClasses: "translate-x-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        }
+        ,{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-4",
+            imgSrc: "./vercel.svg",
+            imgH: "w-[90%]",
+            imgFit: "object-cover ",
+            bgColor: "bg-white",
+            animationClasses: "translate-y-[-100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-6",
+            imgSrc: "",
+            imgH: "",
+            imgFit: "",
+            bgColor: "bg-[#1e2432]",
+            animationClasses: "translate-y-[100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: "",
+            text: "My Most Used Tools"
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-4",
+            imgSrc: "./chatgpt.png",
+            imgH: "w-[90%]",
+            imgFit: "",
+            bgColor: "bg-white",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: "",
         }
     ]
 ]
