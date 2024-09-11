@@ -26,8 +26,8 @@ export default function BentoCellProjects({
     duration
 }: Readonly<BentoCellProps>) {
     return (
-        <div className={` rounded-2xl ${colSpan} ${rowSpan} ${bgColor}  ${observed ? "opacity-100" : animationClasses} flex items-center justify-center  transition transform ease-in-out ${duration} `}>
-            <img src={imgSrc} alt={altText} className={` ${imgFit} ${imgH} ${imgSrc === './next.svg' || './vercel.svg' ? '' : 'rounded-xl'} `} />
+        <div className={` rounded-2xl ${colSpan} ${rowSpan} ${bgColor}  ${observed ? "opacity-100" : animationClasses} flex items-center justify-center  transition transform ease-in-out ${duration} cursor-pointer rounded-lg`}>
+            <img src={imgSrc} alt={altText} className={` ${imgFit} ${imgH} ${imgSrc === './next.svg' || './vercel.svg' ? '' : 'rounded-xl'} filter drop-shadow-2xl`} />
             <h2 className="text-gray-100">{text}</h2>
         </div>
     );

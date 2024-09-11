@@ -43,7 +43,7 @@ export default function Projects({ reference, observed, scrollToSection, current
     >
 
 
-      <div className="flex-grow"></div>
+      
       <BentoGridProjects reference={refs[0]}>
         {projects.map((project, index) => (
           <BentoCellProjects
