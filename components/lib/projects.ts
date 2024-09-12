@@ -29,7 +29,7 @@ export const projects: BentoCellProps[] = [
             imgH: "h-full",
             imgFit: "object-contain",
             bgColor: "",
-            animationClasses: "translate-x-[-100px] opacity-0",
+            animationClasses: "translate-y-[-100px] opacity-0",
             duration: "duration-[1.5s]",
             altText: ""
         },{
@@ -39,7 +39,7 @@ export const projects: BentoCellProps[] = [
             imgH: "",
             imgFit: "object-contain",
             bgColor: "bg-transparent",
-            animationClasses: "translate-x-[-100px] opacity-0",
+            animationClasses: "translate-x-[100px] opacity-0",
             duration: "duration-[1.5s]",
             altText: ""
         }
