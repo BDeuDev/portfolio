@@ -13,7 +13,7 @@ interface BentoCellProps {
 export const projects: BentoCellProps[] = [
 
         {
-            rowSpan: "row-span-7",
+            rowSpan: "row-span-12",
             colSpan: "col-span-3",
             imgSrc: "./gym.png",
             imgH: "",
@@ -23,7 +23,7 @@ export const projects: BentoCellProps[] = [
             duration: "duration-[1.5s]",
             altText: ""
         },{
-            rowSpan: "row-span-6",
+            rowSpan: "row-span-7",
             colSpan: "col-span-6",
             imgSrc: "./space.png",
             imgH: "h-full",
@@ -33,7 +33,7 @@ export const projects: BentoCellProps[] = [
             duration: "duration-[1.5s]",
             altText: ""
         },{
-            rowSpan: "row-span-7",
+            rowSpan: "row-span-12",
             colSpan: "col-span-3",
             imgSrc: "./task.png",
             imgH: "",
