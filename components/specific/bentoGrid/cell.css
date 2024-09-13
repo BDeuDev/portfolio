@@ -1,0 +1,33 @@
+.cell {
+
+    background-color: transparent;
+    position: relative;
+}
+
+.cell::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 20;
+    border-radius: 10px;
+    height: 60%;
+    background-color: rgba(0, 0, 0,0.9); /* Fondo negro semitransparente */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Animación suave */
+    z-index: 1;
+}
+
+.cell:hover::after {
+    opacity: 1; /* Se muestra el elemento ::after al hacer hover */
+}
+
+/* Icono e texto overlay en el centro */
+.hover-cell-content {
+    z-index: 2; /* Aseguramos que el ícono y texto estén encima del ::after */
+    opacity: 0; /* Inicia invisible */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cell:hover .hover-cell-content {
+    opacity: 1; /* Mostrar el ícono y texto al hacer hover */
+}

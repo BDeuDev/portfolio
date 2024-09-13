@@ -61,7 +61,7 @@ export default function App() {
       <Line/>
       <Projects reference={refs[3]} observed={intersectings[2] as boolean}  scrollToSection={scrollToSection} currentSection={currentSection}/>
  
-      <Footer/>
+      <Footer scrollToSection={scrollToSection} currentSection={currentSection}/>
     </main>
   );
 }

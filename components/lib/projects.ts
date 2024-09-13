@@ -9,10 +9,12 @@ interface BentoCellProps {
     duration: string;
     altText: string;
     text?:string;
+    url:string;
 }
 export const projects: BentoCellProps[] = [
 
         {
+            url:"https://itsmygym.vercel.app/",
             rowSpan: "row-span-12",
             colSpan: "col-span-3",
             imgSrc: "./gym.png",
@@ -23,6 +25,7 @@ export const projects: BentoCellProps[] = [
             duration: "duration-[1.5s]",
             altText: ""
         },{
+            url:"https://space-git-quest-frontend.vercel.app/",
             rowSpan: "row-span-7",
             colSpan: "col-span-6",
             imgSrc: "./space.png",
@@ -33,6 +36,7 @@ export const projects: BentoCellProps[] = [
             duration: "duration-[1.5s]",
             altText: ""
         },{
+            url:"https://task-manager-frontend-hazel.vercel.app/",
             rowSpan: "row-span-12",
             colSpan: "col-span-3",
             imgSrc: "./task.png",

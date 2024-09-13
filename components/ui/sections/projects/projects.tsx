@@ -1,4 +1,3 @@
-import BackToHome from "@/components/specific/backtohome/backToHome";
 import BentoCellProjects from "@/components/specific/bentoGrid/bentoCellProyects";
 import BentoGridProjects from "@/components/specific/bentoGrid/bentoGridProyects";
 import useIntersection from "@/hooks/useIntersection";
@@ -41,9 +40,6 @@ export default function Projects({ reference, observed, scrollToSection, current
       ref={reference}
       className={`min-h-screen ${switchState ? 'bg-[#121725]' : 'bg-[#f5f4f4]'} text-black pt-[64px] flex flex-col items-center justify-center`}
     >
-
-
-      
       <BentoGridProjects reference={refs[0]}>
         {projects.map((project, index) => (
           <BentoCellProjects
@@ -59,14 +55,12 @@ export default function Projects({ reference, observed, scrollToSection, current
             imgSrc={project.imgSrc}
             observed={intersectings[0]}
             text={project?.text}
+            url={project.url}
           />
         ))}
 
       </BentoGridProjects>
-      <BackToHome
-        scrollToSection={scrollToSection}
-        currentSection={currentSection}
-      />
+
     </section>
   );
 }

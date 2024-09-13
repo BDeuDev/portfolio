@@ -10,7 +10,7 @@ interface BackToHomeProps {
 export default function BackToHome({ scrollToSection }: Readonly<BackToHomeProps>) {
     const { switchState } = useStore();
     return (
-        <div className='mt-auto translate-y-[30px]'>
+        <div className='mt-auto translate-y-[-20px] w-full flex items-center justify-center'>
             <button className={`${style.container} ${switchState ? 'bg-white' : 'bg-[#1e2432]'} w-[40px] h-[40px]`} onClick={() => scrollToSection(0)}>
                 <FaAnglesUp className={`${switchState ? 'text-black ' : 'text-white'}   text-[1.6rem] text-center w-full `} />
             </button>
