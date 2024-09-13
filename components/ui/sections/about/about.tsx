@@ -1,3 +1,4 @@
+import Description from "@/components/specific/description/description";
 import useStore from "@/store/store";
 import { RefObject } from "react";
 
@@ -17,7 +18,7 @@ export default function About({ reference, observed }: Readonly<AboutProps>) {
                 </h2>
             </div>
             <div className={`w-[50%]`}>
-
+                <Description observed={observed}/>
             </div>
         </section>
     );
