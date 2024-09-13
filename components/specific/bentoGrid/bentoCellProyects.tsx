@@ -34,7 +34,7 @@ export default function BentoCellProjects({
             <h2 className="text-gray-100">{text}</h2>
             <a href={url} target='_blank' className="absolute inset-0 flex flex-col items-center justify-center opacity-0 hover-cell-content">
                 <FaRocket className="text-white text-4xl mb-2" />
-                <span className="text-white text-lg">Visit me</span>
+                <span className="text-white text-lg">View site</span>
             </a>
         </div>
     );
