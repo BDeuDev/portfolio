@@ -5,8 +5,8 @@ interface State {
 
     switchState: boolean;
     setSwitchState: (state: boolean) => void;
-
-
+    menu: boolean;
+    setMenu: (state: boolean) => void;
 }
 
 export const useStore = create<State>()(
@@ -15,7 +15,8 @@ export const useStore = create<State>()(
 
             switchState: true,
             setSwitchState: (state) => set({ switchState: state }),
-
+            menu: false,
+            setMenu: (state) => set({ menu: state})
         }),
         {
             name: 'app-storage',

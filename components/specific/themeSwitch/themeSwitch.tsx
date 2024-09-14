@@ -5,7 +5,7 @@ const ThemeSwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
   padding: 7,
-  position: 'fixed',
+  position: 'absolute',
   top: '15px',
   right: '70px',
   '& .MuiSwitch-switchBase': {

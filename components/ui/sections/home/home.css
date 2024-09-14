@@ -19,7 +19,7 @@
 
     animation: animate-dark-2 5s ease-in-out forwards;
     outline: none;
-    line-height: 0.70em;
+    
 }
 .text-glowing-light {
     position: relative;
@@ -31,7 +31,7 @@
     -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
     animation: animate-light 10s ease-in-out forwards;
     outline: none;
-    line-height: 0.70em;
+    
 }
 .welcome {
     position: relative;
@@ -46,7 +46,7 @@
     color: #fff;
     width: 100%;
     outline: none;
-    line-height: 0.70em;
+ 
 }
 .text-dark {
     position: relative;
@@ -54,7 +54,7 @@
     color: #000;
     width: 100%;
     outline: none;
-    line-height: 0.70em;
+
 }
 .text-glowing-light-2 {
     position: relative;

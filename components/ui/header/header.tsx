@@ -2,6 +2,8 @@
 import { useCallback, useEffect, useState } from 'react';
 import styles from './header.module.css';
 import './header.css'
+import { IoMenuSharp,  } from "react-icons/io5";
+import { RxCross2 } from "react-icons/rx";
 import ThemeSwitch from '@/components/specific/themeSwitch/themeSwitch';
 import useStore from '@/store/store';
 interface HeaderProps {
@@ -26,12 +28,19 @@ export default function Header({ scrollToSection, currentSection }: Readonly<Hea
      
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
      }, []);
-    const { switchState, setSwitchState } = useStore();
+    const { switchState, setSwitchState, menu, setMenu } = useStore();
 
     const handleChange = (event: { target: { checked: boolean; }; }) => {
       setSwitchState(event.target.checked);
     };
-    
+    const handleMenu = () => {
+        if(!menu){
+            setMenu(true)
+        }else{
+            setMenu(false)
+        }
+        
+    }
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
@@ -39,7 +48,7 @@ export default function Header({ scrollToSection, currentSection }: Readonly<Hea
     const text = switchState ? 'text-white' : 'text-[#030136]';
     return (
         <header className={`${isHidden ? styles.hidden : ''} ${styles.header} ${switchState ? 'bg-[#1e2432]' : 'bg-[#d0d0d0]'}  h-[64px] w-full z-50 flex flex-row items-center justify-center shadow-md   fixed top-0`}>
-            <nav className="w-full h-full">
+            <nav className="w-full h-full 2xl:block xl:block lg: md:block mob:hidden">
                 <div className="flex items-center justify-center gap-5 p-2 list-none h-full text-white">
                     {sectionName.map((section, index) => {
                         const isActive = currentSection === index;
@@ -60,9 +69,16 @@ export default function Header({ scrollToSection, currentSection }: Readonly<Hea
                             </button>
                         );
                     })}
+                    
                 </div>
                 
             </nav>
+            <nav className={`${switchState ? ' text-white' : ' text-black'} text-[45px]  top-[5px] right-[10px] 2xl:hidden xl:hidden md:hidden mob:absolute bg-transparent transition transform ease-in-out duration-[0.10s]`}>
+                        <button onClick={()=>handleMenu()} className={`${menu ? 'rotate-90' : 'rotate-0'} transition transform ease-in-out duration-[0.5s]`}>
+                            {menu ? <RxCross2/> : <IoMenuSharp/> }
+                            
+                        </button>
+                    </nav>
             <ThemeSwitch checked={switchState} onChange={handleChange} />
         </header>
     );
