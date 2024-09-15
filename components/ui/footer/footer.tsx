@@ -13,7 +13,7 @@ export default function Footer({scrollToSection,currentSection}: Readonly<Footer
         <div className="flex flex-grow"></div>
 
         <div className={`${switchState ? 'bg-[#1e2432] text-white' : 'bg-[#d0d0d0] text-black'} font-thin text-center py-4 `}>
-        &copy; 2024 Bernabe Deusich. Todos los derechos reservados.
+        &copy; 2024 Bernabe Deusich.
         </div>
        
     </footer>

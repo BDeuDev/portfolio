@@ -38,6 +38,9 @@ export default function Technologies({ reference, observed }: Readonly<Technolog
 
   return (
     <section ref={reference} className={`min-h-screen w-full ${switchState ? 'bg-[#121725]' : 'bg-[#f5f4f4]'} text-black pt-[64px] flex flex-col items-center justify-center`}>
+      <div className="w-full h-screen flex items-center justify-center">
+
+      </div>
       {techs.map((tech, index) => (
         <BentoGrid key={index + 1} reference={refs[index]}>
           {tech.map((tec, indexT) => (
