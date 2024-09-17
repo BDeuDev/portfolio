@@ -12,4 +12,4 @@ export default function BentoGridProjects({children,reference}: Readonly<BentoGr
         {children}
     </div>
   );
-}
+}//full 450

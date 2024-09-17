@@ -104,7 +104,7 @@ export const techs: BentoCellProps[][] = [
             animationClasses: "translate-y-[100px] opacity-0",
             duration: "duration-[1.5s]",
             altText: "",
-            text: "Principal Backend Technologies"
+            text: "Backend Technologies"
         },{
             rowSpan: "row-span-2",
             colSpan: "col-span-2",
@@ -216,7 +216,7 @@ export const techs: BentoCellProps[][] = [
             imgSrc: "",
             imgH: "",
             imgFit: "",
-            text: "Principal Frontend Technologies",
+            text: "Frontend Technologies",
             bgColor: "bg-[#1e2432]",
             animationClasses: "translate-y-[100px] opacity-0",
             duration: "duration-[1.5s]",

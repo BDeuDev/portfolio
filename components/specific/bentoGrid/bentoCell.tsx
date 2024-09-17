@@ -27,7 +27,7 @@ export default function BentoCell({
 }: Readonly<BentoCellProps>) {
     return (
         <div className={` rounded-2xl ${colSpan} ${rowSpan} ${bgColor}  ${observed ? "opacity-100" : animationClasses} flex items-center justify-center  transition transform ease-in-out ${duration} shadow-2xl`}>
-            <img src={imgSrc} alt={altText} className={` ${imgFit} ${imgH} ${imgSrc === './next.svg' || './vercel.svg' ? '' : 'rounded-xl'} `} />
+            <img src={imgSrc} alt={altText} className={` ${imgFit} ${imgH} ${imgSrc === './next.svg' || imgSrc === './vercel.svg' ? '' : 'rounded-xl'} `} />
             <h2 className="text-gray-100">{text}</h2>
         </div>
     );
