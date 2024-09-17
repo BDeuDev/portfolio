@@ -317,6 +317,36 @@ export const techs: BentoCellProps[][] = [
             altText: ""
         },{
             rowSpan: "row-span-2",
+            colSpan: "col-span-4",
+            imgSrc: "./drawio.png",
+            imgH: "w-[90%] h-[90%]",
+            imgFit: "object-contain ",
+            bgColor: "bg-white",
+            animationClasses: "translate-y-[100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-4",
+            imgSrc: "./lighthouse.jfif",
+            imgH: "w-[100%] h-[100%]",
+            imgFit: "object-contain ",
+            bgColor: "bg-gradient-to-r from-[#073595] to-[#0535b2]",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
+            colSpan: "col-span-2",
+            imgSrc: "./excel.png",
+            imgH: "w-[90%] h-[90%]",
+            imgFit: "object-contain ",
+            bgColor: "bg-white",
+            animationClasses: "translate-x-[100px] opacity-0",
+            duration: "duration-[1.5s]",
+            altText: ""
+        },{
+            rowSpan: "row-span-2",
             colSpan: "col-span-6",
             imgSrc: "",
             imgH: "",
